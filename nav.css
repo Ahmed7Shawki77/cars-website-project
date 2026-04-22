@@ -3,8 +3,10 @@ nav ul {
     flex-direction: row;
     list-style: none;
     justify-content: center;
+    margin-top: 10px;
 }
 nav ul li a{
+    margin-top: 10px;
     text-decoration: none;
     color: #681A15;
     font-weight: bold;
