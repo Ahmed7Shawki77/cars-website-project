@@ -1,0 +1,16 @@
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #681A15;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
