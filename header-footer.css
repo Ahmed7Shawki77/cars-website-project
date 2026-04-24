@@ -7,8 +7,11 @@ header{
     font-weight: bold;
     color: #681A15;
     font-family: 'Times New Roman', Times, serif;
+    margin-top: 0;
 }
-
+h1{
+    margin: 0;
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -22,9 +25,26 @@ footer{
     width: 100%;
     display: block;
     bottom: 0;
-    position: fixed;
+    position: absolute;
     left: 0;
     font-weight: bold;
     color: #681A15;
     font-family: 'Times New Roman', Times, serif ;
+}
+
+@media screen and (max-width:768px){
+    footer{
+    text-align: center;
+    padding: 15px 0px;
+    background-image:linear-gradient(45deg,#373B56,#F1B76D);
+    width: 100%;
+    display: block;
+    bottom: 0;
+    position: relative;
+    left: 0;
+    font-weight: bold;
+    color: #681A15;
+    font-family: 'Times New Roman', Times, serif ;
+}
+
 }
