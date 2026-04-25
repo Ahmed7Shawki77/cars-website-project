@@ -1,10 +1,17 @@
+html,body{
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 nav ul {
-     box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -37,6 +44,7 @@ nav ul li a:hover{ color: darkblue;
 @media screen and (max-width:768px){
  
     nav ul {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
     display: flex ;
     flex-direction: column ;
     list-style: none ;
