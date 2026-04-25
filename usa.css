@@ -201,6 +201,20 @@ html,body{
     padding: 0;
     box-sizing: border-box;
 }
+@keyframes pulse{
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    50%{
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
 .dodge{
     text-align: center;
     font-weight: bolder;
@@ -227,10 +241,7 @@ html,body{
     display: flex;
     align-items: center;
     margin-top: 5px;
-     margin-left: 60px;
-}
-.dodge_logo h1{
-    margin-left: 60px;
+     margin-left: 150px;
 }
 .dodge_challenger{
     width: 90%;
@@ -242,7 +253,6 @@ html,body{
     margin: 20px 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 .dodge_challenger:hover{
     background-color: black;
     transition: all 0.5s ease;
@@ -251,5 +261,35 @@ html,body{
 .dodge_challenger p:hover{
     color: wheat;
      cursor: pointer;
+}
+.dodge_polara{
+     width: 90%;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    overflow: hidden;
+    border: 1px solid #e0e0e0 ;
+    margin: 20px 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.dodge_viper{
+     width: 90%;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    overflow: hidden;
+    border: 1px solid #e0e0e0 ;
+    margin: 20px 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.dodge_ram_1500_Trx{
+     width: 90%;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    overflow: hidden;
+    border: 1px solid #e0e0e0 ;
+    margin: 20px 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 }
