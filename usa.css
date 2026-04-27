@@ -11,9 +11,8 @@ html,body{
     box-sizing: border-box;
 }
 .usa_body{
-   background-color: #FFEE8C;
+   background-color: #1c1c1c;
 }
-
 @keyframes pulse{
     0%{
         transform: scale(1);
@@ -28,12 +27,7 @@ html,body{
         opacity: 1;
     }
 }
-.dodge{
-    text-align: center;
-    font-weight: bolder;
-    font-family: monospace;
-}
-.dodge_challenger p{
+.dodge_challenger p,.dodge_polara p,.dodge_viper p,.dodge_ram_1500_Trx p{
     max-width: 90%;
     margin: 10px auto;
     text-align: center;
@@ -52,7 +46,7 @@ html,body{
     color: #444;
 }
 .dodge_viper p{
-     max-width: 90%;
+    max-width: 90%;
     margin: 10px auto;
     text-align: center;
     font-weight: bold;
@@ -61,7 +55,7 @@ html,body{
     color: #444;
 }
 .dodge_ram_1500_Trx p{
-     max-width: 90%;
+    max-width: 90%;
     margin: 10px auto;
     text-align: center;
     font-weight: bold;
@@ -69,32 +63,8 @@ html,body{
     line-height: 1.55;
     color: #444;
 }
-.dodge_challenger img{
+.dodge_challenger img,.dodge_polara img,.dodge_viper img,.dodge_ram_1500_Trx img{
     display: block;
-    margin: 15px auto;
-    height: auto;
-    border-radius: 8px;
-    margin-top: 15px;
-    max-width: 95%;
-}
-.dodge_polara img{ 
-    display: block;
-    margin: 15px auto;
-    height: auto;
-    border-radius: 8px;
-    margin-top: 15px;
-    max-width: 95%;
-}
-.dodge_viper img{
-     display: block;
-    margin: 15px auto;
-    height: auto;
-    border-radius: 8px;
-    margin-top: 15px;
-    max-width: 95%;
-}
-.dodge_ram_1500_Trx img{
-     display: block;
     margin: 15px auto;
     height: auto;
     border-radius: 8px;
@@ -108,7 +78,7 @@ html,body{
     width: 50%;
     margin-left: 45%;
 }
-.dodge_challenger,.dodge_polara {
+.dodge_challenger,.dodge_polara,.dodge_viper,.dodge_ram_1500_Trx {
     width: 40%;
     margin: 0;
     background-color: #ffffff;
@@ -119,7 +89,7 @@ html,body{
     margin: 20px 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.challenger_polara_wrapper{
+.challenger_polara_wrapper,.viper_ram_wrapper{
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -127,8 +97,38 @@ html,body{
     flex-wrap: wrap;
     padding: 20px;
 }
-.dodge_viper,.dodge_ram_1500_Trx{
-     width: 40%;
+.dodge_challenger p:hover,.dodge_polara p:hover,.dodge_viper p:hover,.dodge_ram_1500_Trx p:hover{
+    color: wheat;
+     cursor: pointer;
+}
+.dodge_polara:hover,.dodge_viper:hover,.dodge_ram_1500_Trx:hover,.dodge_challenger:hover{
+    background-color: black;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    animation: pulse 3s infinite ease-in-out;
+}
+.chevrolet_logo{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    width: 100%;
+    margin-left: 45%;
+}
+.chevrolet_logo img{
+    width:150px;
+    height: auto;
+}
+.camaro_deluxe_wrapper,.corvette_tahoe_wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.camaro,.deluxe,.tahoe,.corvette{
+    width: 40%;
     margin: 0;
     background-color: #ffffff;
     border-radius: 12px;
@@ -138,54 +138,49 @@ html,body{
     margin: 20px 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.viper_ram_wrapper{
-     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 30px;
-    flex-wrap: wrap;
-    padding: 20px;
+.camaro img,.deluxe img,.corvette img,.tahoe img{
+     display: block;
+    margin: 15px auto;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 15px;
+    max-width: 95%;
 }
-
-
-.dodge_challenger:hover{
+.camaro p{
+    max-width: 90%;
+    margin: 10px auto;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    line-height: 1.7;
+    color: #444;
+}
+.deluxe p{
+    max-width: 90%;
+    margin: 10px auto;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    line-height: 1.2;
+    color: #444;
+}
+.tahoe p,.corvette p{
+     max-width: 90%;
+    margin: 10px auto;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    line-height: 1.2;
+    color: #444;
+}
+.camaro:hover,.deluxe:hover,.tahoe:hover,.corvette:hover{
     background-color: black;
     transition: all 0.5s ease;
     cursor: pointer;
-     animation: pulse 3s infinite ease-in-out;
+    animation: pulse 3s infinite ease-in-out;
 }
-.dodge_challenger p:hover{
-    color: wheat;
-     cursor: pointer;
-}
-.dodge_polara:hover{
-      background-color: black;
-    transition: all 0.5s ease;
-    cursor: pointer;
-     animation: pulse 3s infinite ease-in-out;
-}
-.dodge_polara p:hover{
-    color: wheat;
-     cursor: pointer;
-}
-.dodge_viper:hover{
-      background-color: black;
-    transition: all 0.5s ease;
-    cursor: pointer;
-     animation: pulse 3s infinite ease-in-out;
-}
-.dodge_viper p:hover{
-    color: wheat;
-     cursor: pointer;
-}
-.dodge_ram_1500_Trx:hover{
-      background-color: black;
-    transition: all 0.5s ease;
-    cursor: pointer;
-     animation: pulse 3s infinite ease-in-out;
-}
-.dodge_ram_1500_Trx p:hover{
-      color: wheat;
+.camaro p:hover,.deluxe p:hover,.tahoe p:hover,.corvette p:hover{
+     color: wheat;
      cursor: pointer;
 }
 @media screen and (max-width:768px){
@@ -237,11 +232,11 @@ html,body{
     margin-top: 15px;
     max-width: 95%;
 }
-.dodge_logo{
+.dodge_logo,.chevrolet_logo{
     display: flex;
     align-items: center;
     margin-top: 5px;
-    margin-left: 156px;
+    margin-left: 140px;
 }
 .dodge_challenger{
     width: 90%;
@@ -262,8 +257,8 @@ html,body{
     color: wheat;
      cursor: pointer;
 }
-.dodge_polara{
-     width: 90%;
+.dodge_viper,.dodge_ram_1500_Trx,.dodge_polara{
+    width: 90%;
     background-color: #ffffff;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
@@ -272,17 +267,7 @@ html,body{
     margin: 20px 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.dodge_viper{
-     width: 90%;
-    background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    overflow: hidden;
-    border: 1px solid #e0e0e0 ;
-    margin: 20px 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.dodge_ram_1500_Trx{
+.camaro,.deluxe,.corvette,.tahoe{
      width: 90%;
     background-color: #ffffff;
     border-radius: 12px;
