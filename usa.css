@@ -97,17 +97,17 @@ html,body{
     flex-wrap: wrap;
     padding: 20px;
 }
-.dodge_challenger p:hover,.dodge_polara p:hover,.dodge_viper p:hover,.dodge_ram_1500_Trx p:hover{
+.dodge_challenger p:hover,.dodge_polara p:hover,.dodge_viper p:hover,.dodge_ram_1500_Trx p:hover,.camaro p:hover,.deluxe p:hover,.tahoe p:hover,.corvette p:hover,.shelby p:hover,.thunderbird p:hover,.gt p:hover,.f_150 p:hover{
     color: wheat;
      cursor: pointer;
 }
-.dodge_polara:hover,.dodge_viper:hover,.dodge_ram_1500_Trx:hover,.dodge_challenger:hover{
+.dodge_polara:hover,.dodge_viper:hover,.dodge_ram_1500_Trx:hover,.dodge_challenger:hover,.camaro:hover,.deluxe:hover,.tahoe:hover,.corvette:hover,.shelby:hover,.thunderbird:hover,.gt:hover,.f_150:hover{
     background-color: black;
     transition: all 0.5s ease;
     cursor: pointer;
     animation: pulse 3s infinite ease-in-out;
 }
-.chevrolet_logo{
+.chevrolet_logo,.ford_logo{
     display: flex;
     align-items: center;
     margin-top: 5px;
@@ -173,15 +173,80 @@ html,body{
     line-height: 1.2;
     color: #444;
 }
-.camaro:hover,.deluxe:hover,.tahoe:hover,.corvette:hover{
-    background-color: black;
-    transition: all 0.5s ease;
-    cursor: pointer;
-    animation: pulse 3s infinite ease-in-out;
+.ford_logo{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    width: 50%;
+    margin-left: 40%;
 }
-.camaro p:hover,.deluxe p:hover,.tahoe p:hover,.corvette p:hover{
-     color: wheat;
-     cursor: pointer;
+.ford_logo img{
+    width: 250px;
+    height: auto;
+}
+.shelby_thunderbird_wrapper,.gt_f_150_wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.shelby img,.thunderbird img,.gt img,.f_150 img{
+    display: block;
+    margin: 15px auto;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 15px;
+    max-width: 95%;
+}
+.shelby,.thunderbird,.gt,.f_150{
+    width: 40%;
+    margin: 0;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    overflow: hidden;
+    border: 1px solid #e0e0e0 ;
+    margin: 20px 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.shelby p{
+    max-width: 90%;
+    margin: 10px auto;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    line-height: 1.65;
+    color: #444;
+}
+.thunderbird p{
+    max-width: 90%;
+    margin: 10px auto;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    line-height: 1.5;
+    color: #444;
+}
+.gt p{
+    max-width: 90%;
+    margin: 10px auto;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    line-height: 1.3;
+    color: #444;
+}
+.f_150 p{
+    max-width: 90%;
+    margin: 10px auto;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    line-height: 1.75;
+    color: #444;
 }
 @media screen and (max-width:768px){
     html,body{
@@ -236,7 +301,13 @@ html,body{
     display: flex;
     align-items: center;
     margin-top: 5px;
-    margin-left: 140px;
+    margin-left: 130px;
+}
+.ford_logo{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 90px;
 }
 .dodge_challenger{
     width: 90%;
@@ -257,18 +328,8 @@ html,body{
     color: wheat;
      cursor: pointer;
 }
-.dodge_viper,.dodge_ram_1500_Trx,.dodge_polara{
+.dodge_viper,.dodge_ram_1500_Trx,.dodge_polara,.camaro,.deluxe,.corvette,.tahoe,.shelby,.thunderbird,.gt,.f_150{
     width: 90%;
-    background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    overflow: hidden;
-    border: 1px solid #e0e0e0 ;
-    margin: 20px 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.camaro,.deluxe,.corvette,.tahoe{
-     width: 90%;
     background-color: #ffffff;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
