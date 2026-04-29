@@ -11,7 +11,7 @@ html,body{
     box-sizing: border-box;
 }
 .usa_body{
-   background-color: #1c1c1c;
+   background-color: #c0bcbc;
 }
 @keyframes pulse{
     0%{
@@ -297,7 +297,13 @@ html,body{
     margin-top: 15px;
     max-width: 95%;
 }
-.dodge_logo,.chevrolet_logo{
+.dodge_logo{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 120px;
+}
+.chevrolet_logo{
     display: flex;
     align-items: center;
     margin-top: 5px;
@@ -307,7 +313,7 @@ html,body{
     display: flex;
     align-items: center;
     margin-top: 5px;
-    margin-left: 70px;
+    margin-left: 50px;
 }
 .dodge_challenger{
     width: 90%;
