@@ -301,22 +301,22 @@ html,body{
     display: flex;
     align-items: center;
     margin-top: 5px;
-    margin-left: 110px;
+    margin-left: 35%;
 }
 .chevrolet_logo{
     display: flex;
     align-items: center;
     margin-top: 5px;
-    margin-left: 100px;
+    margin-left: 32%;
 }
 .ford_logo{
     display: flex;
     align-items: center;
     margin-top: 5px;
-    margin-left: 40px;
+    margin-left: 20%;
 }
 .dodge_challenger{
-    width: 95%;
+    width: 100%;
     background-color: #ffffff;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
@@ -335,7 +335,7 @@ html,body{
      cursor: pointer;
 }
 .dodge_viper,.dodge_ram_1500_Trx,.dodge_polara,.camaro,.deluxe,.corvette,.tahoe,.shelby,.thunderbird,.gt,.f_150{
-    width: 95%;
+    width: 400px;
     background-color: #ffffff;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
