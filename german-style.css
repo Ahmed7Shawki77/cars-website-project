@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+   }
+
+.hero-logo {
+    text-align: center;
+    padding: 40px 0;
+          }
+
+.german-car {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+            }
+
+.german-header {
+    margin-bottom: 20px;
+    text-align: left;
+              }
+
+.german-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+               }
+
+.german-car-circle {
+    width: 40px;
+    height: 40px;
+    background-color: #d1d1d1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+                    }
+
+.german-header h2 {
+    font-size: 28px;
+    color: #8b1a1a;
+    font-weight: bold;
+                    }
+
+.german-desc {
+    font-size: 14px;
+    color: #666;
+    margin-left: 55px;
+              }
+
+.german-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+            }
+
+.german-card {
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+            }
+
+.german-card:hover {
+    transform: translateY(-5px);
+                   }
+
+.german-image {
+    width: 100%;
+    height: 200px;
+    background-color: #eee;
+              }
+
+.german-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+                 }
+
+.german-content {
+    padding: 20px;
+    text-align: center;
+                }
+
+.german-content h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #333;
+                    }
+
+.german-content p {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 12px;
+                  }
+
+.german-stars {
+    color: #f1c40f;
+    font-size: 14px;
+               }
+
+.geramn-car {
+    margin-bottom: 80px;
+            }
+
+.hero-logo {
+    text-align: center;
+            }
+
+.bouncing-german {
+    font-size: 42px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    display: inline-block;
+    animation: bounce 2s ease-in-out infinite;
+                }
+
+                    /* Table of BMW Prices */
+.bmw-table {
+    overflow-x: auto;
+}
+
+.bmw-table table {
+    width: 75%;
+    margin: auto;
+    border-collapse: collapse;
+    border: 2px solid #3e80c7;
+    background-color: #f8f8f8;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.1);
+                 }
+
+.bmw-table thead {
+    background-color: #3e80c7;
+    color: #000;
+                 }
+
+.bmw-table td {
+    padding: 18px;
+    border: 1px solid #3e80c7;
+    text-align: center;
+    color: #000000;
+               }
+
+.bmw-table td.names {
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    color: #ffffff;
+                    }
+
+
+
+.bmw-table tr:hover {
+    background-color: #3e80c7;
+    transition: background-color 0.3s ease;
+                    }
+
+.bmw-table tr:hover td {
+    color:#ffffff;
+                       }
+
+.bmw-table {
+    margin-bottom: 80px;
+           }
+
+                    /* Table of Mercedes Prices */
+.mercedes-table {
+    overflow-x: auto;
+                }
+
+.mercedes-table table {
+    width: 75%;
+    margin: auto;
+    border-collapse: collapse;
+    border: 2px solid #c5cdce;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.1);
+                      }
+
+.mercedes-table thead {
+    background-color: #c5cdce;
+    color: #ffffff;
+                      }
+
+.mercedes-table td {
+    padding: 18px;
+    border: 1px solid #c5cdce;
+    text-align: center;
+    color: #000000;
+                   }
+
+.mercedes-table td.names {
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    color: #ffffff;
+                         }
+
+.mercedes-table tr:hover {
+    background-color: #c5cdce;
+    transition: background-color 0.3s ease;
+                         }
+
+.mercedes-table tr:hover td {
+    color:#ffffff;
+                            }
+
+.mercedes-table {
+    margin-bottom: 80px;
+                }
+
+                    /* Table of Porche Prices */
+.porche-table {
+    overflow-x: auto;
+              }
+
+.porche-table table {
+    width: 75%;
+    margin: auto;
+    border-collapse: collapse;
+    border: 2px solid #67302c;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.1);
+                    }
+
+.porche-table thead {
+    background-color: #67302c;
+    color: #ffffff;
+                    }
+
+.porche-table td {
+    padding: 18px;
+    border: 1px solid #81681e;
+    text-align: center;
+    color: #67302c;
+                 }
+
+.porche-table td.names {
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    color: #f1ca54;
+                       }
+
+.porche-table tr:hover {
+    background-color: #67302c;
+    transition: background-color 0.3s ease;
+                       }
+
+.porche-table tr:hover td {
+    color:#f1ca54;
+                          }
+
+.porche-table {
+    margin-bottom: 95px;
+              }
+
+@media (max-width: 1100px) {
+    .brand-row {
+        grid-template-columns: 1fr;
+               }
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+                }
+                            }   
+           
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+                    /* To look good on mobile phones*/
+@media (max-width: 768px) {
+    .nav-links-bar ul {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px;
+                     }
+
+    .nav-links-bar ul li a {
+        font-size: 12px;
+                           }
+
+    .hero-title h1, .bouncing-text {
+        font-size: 28px !important;
+        padding: 0 10px;
+                                   }
+
+    .german-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px;
+        padding: 0 15px;
+              }
+
+    .german-header {
+        text-align: center;
+                  }
+
+    .german-title {
+        justify-content: center;
+                      }
+
+    .german-desc {
+        margin-left: 0;
+        padding: 0 15px;
+                       }
+
+    .german-image {
+        height: 250px;
+               }
+                            }
