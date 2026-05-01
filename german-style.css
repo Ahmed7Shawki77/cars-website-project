@@ -5,6 +5,10 @@
     font-family: Arial, sans-serif;
    }
 
+body{
+    background-color: #c0bcbc;
+    }
+
 .hero-logo {
     text-align: center;
     padding: 40px 0;
