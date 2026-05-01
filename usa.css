@@ -249,7 +249,7 @@ td:hover{
 .form_usa{
      width: fit-content;
     margin: 20px auto !important;
-    background: transparent;
+    background: #ffffff;
     padding: 15px !important;
     border-radius: 15px;
     display: block !important;
@@ -259,7 +259,8 @@ td:hover{
 }
 input{
     font-family: monospace;
-    border-radius: 10px;
+    border-radius: 15px;
+    border: 8px solid #444;
 }
 .name-model-wrapper,.company-country-wrapper{
     gap:30px;
@@ -273,12 +274,30 @@ label{
     color: #681A15;
     font-weight: bold;
 }
-.b1{
-    
+.button{
+    margin-left: 39%;
+    gap: 50px;
 }
-.b2{
-    margin-left: 70%;
+.b1,.b2{
+    background-color: grey;
+    border-radius: 8px;
 }
+.b1:hover{
+     background-color: #00695f;
+     border-radius: 8px;
+     cursor: cell;
+     transform: translateY(-5px);
+     box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+     transition:0.5sec;
+ }
+ .b2:hover{
+     background-color: #c21A09;
+     border-radius: 8px;
+     cursor: not-allowed;
+      transform: translateY(-5px);
+     box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+     transition:0.5sec;
+ }
 @media screen and (max-width:768px){
     .dodge_logo{
     display: flex;
@@ -337,4 +356,56 @@ label{
     transition: all 1s cubic-bezier(0.39, 0.58, 0.57, 1);
     cursor: pointer;
 }
+.form_usa{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 6px 10px rgb(0 0 0 / 40%);
+    transition: all 1s cubic-bezier(0.39, 0.58, 0.57, 1);
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+input{
+    font-family: monospace;
+    border-radius: 15px;
+    border: 8px solid #444;
+}
+.name-model-wrapper,.company-country-wrapper{
+    gap:30px;
+}
+label{
+    color: #681A15;
+    cursor: pointer;
+}
+::placeholder{
+    text-align: center;
+    color: #681A15;
+    font-weight: bold;
+}
+.button{
+    margin-left: 31%;
+    gap: 50px;
+}
+.b1,.b2{
+    background-color: grey;
+    border-radius: 8px;
+}
+.b1:hover{
+     background-color: #00695f;
+     border-radius: 8px;
+     cursor: cell;
+     transform: translateY(-5px);
+     box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+     transition:0.5sec;
+ }
+ .b2:hover{
+     background-color: #c21A09;
+     border-radius: 8px;
+     cursor: not-allowed;
+      transform: translateY(-5px);
+     box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+     transition:0.5sec;
+ }
 }
