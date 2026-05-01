@@ -42,7 +42,7 @@ footer{
     width: 100%;
     display: block;
     bottom: 0;
-    position: relative;
+    position: fixed;
     left: 0;
     font-weight: bold;
     color: #681A15;
