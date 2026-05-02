@@ -1,8 +1,18 @@
+html, body {
+    height: 100%; /* Required for the flex-basis to work */
+    margin: 0;
+}
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full height of the screen */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #c0bcbc;
     color: #080808;
     margin: 0;
+}
+main {
+    flex: 1; 
 }
 
 .container {
