@@ -1,4 +1,4 @@
-*{
+/*{
   margin:0;
   padding:0;
   box-sizing:border-box;
@@ -116,7 +116,7 @@
 }
 .logo:hover{
   transform: scale(1.1) rotate(5deg);
-}
+}*/
 
 .company-header{
     display:flex;
@@ -200,8 +200,6 @@
   color: #1a1a2e;
   margin: 0;
 }
-
-/* للشاشات الصغيرة */
 @media (max-width: 768px) {
   .cars-cont {
     grid-template-columns: 1fr;
@@ -258,37 +256,4 @@
 
 
 
-@keyframes slideInLinks {
-  0% {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.first nav ul li {
-  animation: slideInLinks 0.6s ease forwards;
-  opacity: 0;
-}
-
-
-.first nav ul li:nth-child(1) { animation-delay: 0.1s; }
-.first nav ul li:nth-child(2) { animation-delay: 0.4s; }  /* فرق 0.3 ثانية */
-.first nav ul li:nth-child(3) { animation-delay: 0.7s; }  /* فرق 0.3 ثانية */
-.first nav ul li:nth-child(4) { animation-delay: 1.0s; }  /* فرق 0.3 ثانية */
-.first nav ul li:nth-child(5) { animation-delay: 1.3s; }
-
-
-.first nav ul li a {
-  transition: all 0.3s ease;
-  display: inline-block;
-}
-
-.first nav ul li a:hover {
-  transform: translateY(-2px);
-  color: #e94560;
-  letter-spacing: 0.5px;
-}
+ 
