@@ -1,37 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Home-page</title>
-     <link rel="stylesheet" href="usa.css">
-    <link rel="stylesheet" href="nav.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoWorld</title>
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="header-footer.css">
-    <link rel="icon" type="images/x-icon" href="images/favicon.ico">
 </head>
 <body>
-     <header>
-        <h1>Home page</h1>
-    </header>
-     <nav>
-        <ul>
-            <li><a href="index.html">"Home page"</a></li>
-            <li><a href="germany-cars.html">"German cars"</a></li>
-            <li><a href="italy-cars.html">"Italian cars"</a></li>
-            <li><a href="usa-cars.html">"USA cars"</a></li>
-            <li><a href="british-cars.html">"British cars"</a></li>
-            <li><a href="japanese-cars.html">"Japanese cars"</a></li>
-            <li><a href="china-cars.html">"Chinese cars"</a></li>
-            <li><a href="contact-us.html">"Contact us"</a></li>
+<!-- HEADER -->
+<header class="first">
+  <!-- NAVBAR -->
+  <nav>
+    <div class="aut">CarWorld</div>
+    <ul>
+            <li><a href="index.html">Home page</a></li>
+            <li><a href="germany-cars.html">German cars</a></li>
+            <li><a href="italy-cars.html">Italian cars</a></li>
+            <li><a href="usa-cars.html">USA cars</a></li>
+            <li><a href="british-cars.html">British cars</a></li>
+            <li><a href="japanese-cars.html">Japanese cars</a></li>
+            <li><a href="china-cars.html">Chinese cars</a></li>
+            <li><a href="contact-us.html">Contact us</a></li>
         </ul>
-     </nav>
-        <main>
-            <section>
-                
-            </section>
-        </main>
-            <footer>
-             <p>&copy; [team name]. All rights reserved</p>
-            </footer>
+    
+    <!-- LOGIN BUTTONS -->
+    <div class="auth-buttons">
+      <button class="btn" onclick="openForm('Login')">Login</button>
+      <button class="btn" onclick="openForm('Sign Up')">Sign Up</button>
+    </div>
+  </nav>
+ 
+  <section class="hero-bmw">
+    <div class="hero-overlay"></div>
+    <div class="hero-bmw-content">
+        <h1>Step into a world where performance meets prestige</h1>
+        <p>From powerful performance machines to everyday reliable rides, we bring you closer to the cars you love. Discover detailed insights, compare top models, and find the perfect vehicle that matches your style, needs, and ambition.</p>
+        <button class="hero-bmw-btn">Explore Now</button>
+        <div class="search-container">
+    <input type="text" class="glass-search" placeholder="🔍 Search your perfect ride...">
+    <button class="glass-search-btn">Search</button>
+</div>
+    </div>
+</section>
+</header>
+
+
+   <footer class="footer">
+    <div class="footer-container">
+        <!-- العمود الأول: Auto World -->
+        <div class="footer-col">
+            <h2 class="footer-logo">CarWorld</h2>
+            <p class="footer-tagline">Driven by precision. Defined by prestige</p>
+        </div>
+
+        <!-- العمود الثاني: About Us -->
+        <div class="footer-col">
+            <h3 class="about-title">About Us</h3>
+            <p class="about-text">Every drive tells a story. Let us help you start yours. Whether it's about your first car, your first job, or your first home, we're here to help.</p>
+        </div>
+
+        <!-- العمود الثالث: Quick Links -->
+        <div class="footer-col">
+            <h3 class="footer-title">Quick Links</h3>
+            <ul class="footer-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Brands</a></li>
+                <li><a href="#">Test Drive</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 Auto World. All rights reserved.</p>
+    </div>
+</footer>
+
 </body>
 </html>

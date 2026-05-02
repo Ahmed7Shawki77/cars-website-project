@@ -1,0 +1,345 @@
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+}
+.first nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0a0a1a;
+  padding: 15px 30px;
+  flex-wrap: wrap;
+}
+
+/* اللوجو على الشمال من فوق */
+.aut {
+  font-size: 32px;
+  color:#ff5500 ;
+  font-size: 28px;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+  align-self: flex-start;  /* دي اللي هتخليه يروح لفوق الشمال */
+}
+
+.first nav ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  margin: 0;
+  padding: 0;++++++++++++++
+}
+
+.first nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-family: 'Arial', sans-serif;
+  transition: all 0.3s ease;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+.first nav ul li a:hover {
+  font-size: 20px;
+  color: #e4ad64;
+}
+
+.first nav ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #e4ad64;
+  transition: width 0.3s ease;
+}
+
+.first nav ul li a:hover::after {
+  width: 100%;
+}
+
+.btn-x {
+  background-color: white;
+  border: 1px solid #555;
+  border-left: none;
+  padding: 7px 12px;
+  font-size: 14px;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s ease;
+}
+/* تكبير وتغيير اللون عند المرور */
+.btn-x:hover {
+  background-color: #e4ad64;
+  transform: scale(1.05);  /* يكبر 5% */
+  padding: 7px 16px;       /* يزيد عرض شوية */
+}
+/* لما تدوس على الزرار (تنقر عليه) */
+.btn-x:active {
+  transform: scale(0.98);  /* ضغط صغير عشان يحس إنه مضغوط */
+  background-color: #c7924a;
+}
+/* الحاوية بتاعة الأزرار */
+.auth-buttons {
+  display: flex;
+  flex-direction: row;  /* تحت بعض */
+  gap: 10px;
+}
+/* الأزرار نفسها */
+.auth-buttons .btn {
+  background-color: white;
+  border: none;
+  padding: 6px 16px;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);  /* شادو ثابت قبل ما تدوس */
+}
+/* لما الماوس يعدي عليهم */
+.auth-buttons .btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-color: none;
+  background-color: #e4ad64;
+  padding: 7px 16px; 
+}
+/* لما تدوس (تنقر) على الزرار */
+.auth-buttons .btn:active {
+  transform: scale(1.08);  /* يكبر 8% لما تدوس */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  background-color: #e4ad64;
+}
+
+/* الأزرار زي بتاعة Login و Sign Up */
+.left .btn {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 10px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #1a1a2e;
+  font-weight: bold;
+  transition: all 0.4s ease;
+  margin-right: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.left .btn:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-color: none;
+}
+.left .btn:active {
+  transform: scale(1.08);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  background-color: #f5f5f5;
+}
+
+.hero-bmw {
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+    background-image: url('https://images.unsplash.com/photo-1555215695-3004980ad54e?w=1600&auto=format');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* الكلام يبقى في النص في الشمال */
+    flex: 1;
+    margin-bottom: 0;
+}
+
+/* طبقة سودا عشان الكلام يبان */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.55); /* خلفية سودا شفافة */
+}
+
+.hero-bmw-content {
+    position: relative;
+    z-index: 1;
+    width: 70%; /* نص الصفحة للكلام */
+    padding: 50px;
+    color: white;
+}
+
+.hero-bmw-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.hero-bmw-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.hero-bmw-btn {
+    background-color: #ff5500;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero-bmw-btn:hover {
+    background-color: #e04400;
+}
+.search-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    max-width: 700px;
+    width: 100%;
+}
+
+.glass-search {
+    flex: 1;
+    padding: 18px 25px;
+    font-size: 18px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    color: white;
+    outline: none;
+    transition: 0.3s;
+}
+
+.glass-search::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+}
+
+.glass-search:focus {
+    border-color: #ff5500;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.glass-search-btn {
+    padding: 18px 35px;
+    font-size: 18px;
+    background: rgba(255, 85, 0, 0.85);
+    backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.glass-search-btn:hover {
+    background: #ff5500;
+    transform: scale(1.02);
+}
+html ,body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+}
+
+body {
+    display: block;
+    flex-direction: column;
+
+}
+/* ========== FOOTER ========== */
+.footer {
+    background-color: #0a0a1a;
+    color: white;
+    padding: 60px 50px 20px;
+    margin-top: 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-logo {
+    font-size: 40px;
+    color: #ff5500;
+    margin-bottom: 15px;
+}
+
+.footer-tagline {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.about-title {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.about-text {
+    font-size: 14px;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.footer-title {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ff5500;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 40px;
+    margin-top: 40px;
+    border-top: 1px solid #333;
+    font-size: 14px;
+    color: #888;
+}
