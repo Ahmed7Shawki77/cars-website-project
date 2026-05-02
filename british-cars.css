@@ -3,26 +3,6 @@ body{
 }
 
 
-/* تنسيق العلمBritish cars */
-header h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-.uk-flag {
-    width: 40px;
-    height: auto;
-    display: inline-block;
-}
-
-/* تنسيق أقسام الشركات */
-.company {
-    margin-bottom: 50px;
-    padding: 20px 0;
-}
-
 /* تنسيق اسم الشركة مع اللوجو */
 .company h2 {
     font-size: 35px;
