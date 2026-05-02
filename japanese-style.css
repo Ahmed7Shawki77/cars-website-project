@@ -1,0 +1,142 @@
+/*دي بتتحكم في لون البيدج كلها */
+body {
+    font-family: Arial;
+    background: #c0bcbc;
+    color: white;
+}
+
+/*دا هنا بنتحكم في اي حاجة تخص عنوان الصفحة من فوق الجبانيز كارز */
+.main-title {
+    text-align: center;
+    font-size: 45px;
+    margin: 40px 0;
+    background:#681A15; 
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 2px;
+}
+
+/*دا هنا انا بتكلم على شغل كل براند انا اشتغلت عليها  */
+.brand {
+    width: 85%;
+    margin: 50px auto;
+}
+
+/*  اسم الشركة بس*/
+.brand h2 {
+    font-size: 30px;
+    color:#681A15; 
+    margin-bottom: 10px;
+}
+.brand-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 28px;
+}
+
+/* لوجو كل شركة انا ال حطاها جمب اسمها*/
+.logo {
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*دا هنا بتحكم في صورة اللوجو ال انا حطاها*/
+.logo img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+}
+
+/*الكابشن ال انا حطاه تحت كل شركة */
+.desc {
+    color: #361e1e;
+    margin-bottom: 20px;
+}
+
+/* كود بيتحكم يحط العربيات جنب بعض */
+.cars {
+    display: flex;
+    gap: 20px;
+}
+
+/* صورة كل عربية */
+.car {
+    width: 30%;
+    background: #f1eeee;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.3s;
+}
+
+/*حاطة كود عشان اليوزر يحس ان الصورة بتتحرك بشكل راسي لما الماوس يجي عليها*/
+.car:hover {
+    transform: translateY(-10px);
+}
+
+/* الصورة بتاعت كل عربية*/
+.car img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* اسم العربية */
+.car h3 {
+    margin: 10px 0;
+    color: #361e1e;
+}
+
+/* الكابشن ال تحت كل عربية انا حطاها*/
+.car p {
+    color: #361e1e;
+    padding: 0 10px 15px;
+}
+/*التقييم ال حطاه تحت كل عربية*/
+.rating {
+    color: gold;
+    margin-bottom: 10px;
+}
+/* Light Theme */
+body.light {
+    background: #c0bcbc;
+    color: black;
+}
+
+/* Dark Theme */
+body.dark {
+    background: #313030;
+    color: white;
+}
+body.light {
+    background: #c0bcbc;
+    color: black;
+}
+/*رمز القمر ال اليوزر هيدوس عليه عشان يغير الثيميز*/
+#toggleMode {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+/*  يخلي الكليك صوته أحسن */
+button, a, .clickable, img {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+button:active,
+a:active,
+.clickable:active,
+img:active {
+    transform: scale(0.97);
+}
