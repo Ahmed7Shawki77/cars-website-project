@@ -124,10 +124,10 @@
     animation: bounce 2s ease-in-out infinite;
                 }
 
-                    /* Table of BMW Prices */
+                    /* Gdwel As3ar BMW */
 .bmw-table {
     overflow-x: auto;
-}
+            }
 
 .bmw-table table {
     width: 75%;
@@ -172,7 +172,7 @@
     margin-bottom: 80px;
            }
 
-                    /* Table of Mercedes Prices */
+                    /* Gdwel As3ar Mercedes */
 .mercedes-table {
     overflow-x: auto;
                 }
@@ -218,7 +218,7 @@
     margin-bottom: 80px;
                 }
 
-                    /* Table of Porche Prices */
+                    /* Gdwel As3ar Porsche */
 .porche-table {
     overflow-x: auto;
               }
@@ -264,61 +264,19 @@
     margin-bottom: 95px;
               }
 
-@media (max-width: 1100px) {
-    .brand-row {
-        grid-template-columns: 1fr;
-               }
-    .cards-grid {
-        grid-template-columns: repeat(2, 1fr);
+              /* Ta9beet shakl el video */
+.german-company {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 20px 20px 60px #ffffff, -20px -20px 60px #ffffff; 
                 }
-                            }   
-           
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-15px);
-    }
-}
 
-                    /* To look good on mobile phones*/
-@media (max-width: 768px) {
-    .nav-links-bar ul {
-        flex-wrap: wrap;
-        gap: 10px;
-        padding: 10px;
-                     }
-
-    .nav-links-bar ul li a {
-        font-size: 12px;
-                           }
-
-    .hero-title h1, .bouncing-text {
-        font-size: 28px !important;
-        padding: 0 10px;
-                                   }
-
-    .german-grid {
-        grid-template-columns: 1fr !important;
-        gap: 20px;
-        padding: 0 15px;
-              }
-
-    .german-header {
-        text-align: center;
-                  }
-
-    .german-title {
-        justify-content: center;
-                      }
-
-    .german-desc {
-        margin-left: 0;
-        padding: 0 15px;
-                       }
-
-    .german-image {
-        height: 250px;
-               }
-                            }
+video {
+    width: 100%;
+    border-radius: 20px;
+    display: block;
+    outline: none;
+    transition: transform 0.5s ease;
+       }
