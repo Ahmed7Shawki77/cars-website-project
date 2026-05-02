@@ -6,15 +6,6 @@
   font-family: Arial, sans-serif;
 }
 
-/* اللوجو على الشمال من فوق */
-.aut {
-  font-size: 32px;
-  color:#ff5500 ;
-  font-size: 28px;
-  font-weight: bold;
-  font-family: 'Arial', sans-serif;
-  align-self: flex-start;  /* دي اللي هتخليه يروح لفوق الشمال */
-}
 .btn-x {
   background-color: white;
   border: 1px solid #555;
