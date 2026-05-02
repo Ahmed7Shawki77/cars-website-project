@@ -1,9 +1,9 @@
 body{
     background-color: #f8f8f8;
 }
-/* british-cars.css */
 
-/* تنسيق العلم جنب British cars */
+
+/* تنسيق العلمBritish cars */
 header h1 {
     display: flex;
     align-items: center;
@@ -40,7 +40,7 @@ header h1 {
     display: inline-block;
 }
 
-/* حاوية العربيات */
+/* مكان العربيات */
 .cars-container {
     display: flex;
     gap: 30px;
@@ -48,7 +48,7 @@ header h1 {
     justify-content: center;
 }
 
-/* بطاقة السيارة */
+/* بطاقة العربيات */
 .car-card {
     flex: 1;
     min-width: 280px;
@@ -92,7 +92,7 @@ header h1 {
     display: inline-block;
 }
 
-/* استجابة للشاشات الصغيرة */
+/* الريسبونسيف للموبيلات*/
 @media (max-width: 768px) {
     .cars-container {
         flex-direction: column;
@@ -166,7 +166,7 @@ width: 70px;
     display: inline-block;
 
 }
-
+/* علم بريطانيا الي بيتحرك  */
 @keyframes bounce {
   0%, 100% {
     transform: translateY(0);
