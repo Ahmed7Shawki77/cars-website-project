@@ -31,9 +31,6 @@ footer{
     color: #681A15;
     font-family: 'Times New Roman', Times, serif ;
 }
-.contact_us{
-    position: fixed !important;
-}
 @media screen and (max-width:768px){
     footer{
     text-align: center;
