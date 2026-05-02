@@ -1,0 +1,155 @@
+.testdrive-section {
+  padding: 80px 40px;
+  position: relative;
+}
+
+.testdrive-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  max-width: 1300px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.testdrive-form {
+  flex: 1;
+  max-width: 450px;
+  width: 100%;
+  background: rgba(255 ,255 ,255, 0.3);
+  backdrop-filter: blur(4px);
+  border-radius: 30px;
+  padding: 40px 35px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.testdrive-form h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+.testdrive-form input:not([type="radio"]),
+.testdrive-form select {
+  width: 100%;
+  padding: 14px 18px;
+  margin: 12px 0;
+  border: none;
+  border-radius: 40px;
+  background: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  outline: none;
+  display: block;
+  box-sizing: border-box;
+}
+
+.gender-group {
+  width: 100%;
+  display: flex;
+  gap: 40px;
+  margin: 15px 0;
+  color: white;
+  font-weight: bold;
+  padding: 12px 18px;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.form-buttons button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#bookBtn {
+  background-color: #800020;
+  color: white;
+}
+
+#bookBtn:hover {
+  background-color: #a00028;
+  transform: scale(1.02);
+}
+.testdrive-info {
+  flex: 1;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+}
+
+.testdrive-info h3 {
+  font-size: 36px;
+  margin-bottom: 25px;
+  border-left: 5px solid #ffaa00;
+  padding-left: 20px;
+}
+
+.testdrive-info p {
+  font-size: 20px;
+  margin: 15px 0;
+  line-height: 1.4;
+}
+
+.testdrive-info .strong-text {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffaa00;
+  margin-top: 30px;
+}
+
+#confirmBookBtn {
+  background-color: #ffaa00;
+  color: black;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 40px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+body {
+  
+  background-image: url('https://www.wsupercars.com/wp-content/uploads/2023-Lamborghini-Autentica-005.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2); /* إضاءة خفيفة */
+  z-index: -1;
+}
+
+@media (max-width: 900px) {
+  .testdrive-container {
+    flex-direction: column;
+  }
+  .testdrive-form, .testdrive-info {
+    width: 100%;
+  }
+  .testdrive-info h3 {
+    font-size: 28px;
+  }
+}
+
+
+

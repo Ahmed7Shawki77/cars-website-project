@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Chinese-cars</title>
+     <link rel="stylesheet" href="usa.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="header-footer.css">
+    <link rel="icon" type="images/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+     <header>
+        <h1>Test Drive</h1>
+    </header>
+     <nav>
+        <ul>
+             <li><a href="index.html">"Home page"</a></li>
+            <li><a href="germany-cars.html">"German cars"</a></li>
+            <li><a href="italy-cars.html">"Italian cars"</a></li>
+            <li><a href="usa-cars.html">"USA cars"</a></li>
+            <li><a href="british-cars.html">"British cars"</a></li>
+            <li><a href="japanese-cars.html">"Japanese cars"</a></li>
+            <li><a href="china-cars.html">"Chinese cars"</a></li>
+            <li><a href="test.html">Test Drive</a></li>
+            <li><a href="contact-us.html">"Contact us"</a></li>
+        </ul>
+     </nav>
+
+  <main>
+  <section class="testdrive-section">
+  <div class="testdrive-container">
+  
+    <div class="testdrive-form">
+      <h2>Book Your Test Drive</h2>
+      <form id="testdriveForm">
+        <input type="text" placeholder="Full Name" required>
+        <input type="tel" placeholder="Phone Number" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="text" placeholder="Car Model" required>
+
+      <select required>
+        <option value="">Choose country</option>
+        <option value="1">GERMANY</option>
+        <option value="2">BRITISH</option>
+        <option value="3">USA</option>
+        <option value="4">JAPANESE</option>
+        <option value="5">ITALIAN</option>
+        <option value="6">CHINESE</option>
+      </select>
+        
+        <div class="gender-group">
+          <label><input type="radio" name="gender" value="Male" required> Male</label>
+          <label><input type="radio" name="gender" value="Female" required> Female</label>
+        </div>
+
+        <div class="form-buttons">
+          <button type="submit" id="bookBtn"> Book Now</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="testdrive-info">
+      <h3>Why You'll Love Driving With Us</h3>
+      <p> Premium cars that blend elegance with raw power.</p>
+      <p> Easy, fast, and secure booking — just a few clicks away.</p>
+      <p> Direct support from car experts before and after your drive.</p>
+      <p> Experience the future of mobility — smoother, safer, smarter.</p>
+      <p class="strong-text">Don't just drive. Drive with confidence.</p>
+    </div>
+
+  </div>
+</section>
+</main>
+
+  <footer>
+     <p>&copy; [team name]. All rights reserved</p>
+  </footer>
+</body>
+</html>  
+
+
+<script>
+document.getElementById('testdriveForm').addEventListener('submit', function(e) {
+  const name = document.querySelector('input[placeholder="Full Name"]').value;
+  const phone = document.querySelector('input[placeholder="Phone Number"]').value;
+  const email = document.querySelector('input[placeholder="Email Address"]').value;
+  const car = document.querySelector('input[placeholder="Car Model (e.g., BYD SEALION 7)"]').value;
+  const genderSelected = document.querySelector('input[name="gender"]:checked');
+
+  if (!name || !phone || !email || !car || !genderSelected) {
+    e.preventDefault();
+    alert('❌ Please fill all fields before booking.');
+  }
+});
+
+</script>
