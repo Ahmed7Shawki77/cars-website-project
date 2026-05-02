@@ -308,38 +308,3 @@ body {
     color: #ccc;
     line-height: 1.6;
 }
-
-.footer-title {
-    font-size: 24px;
-    color: white;
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-
-.footer-links {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-links li {
-    margin-bottom: 12px;
-}
-
-.footer-links a {
-    color: #ccc;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.footer-links a:hover {
-    color: #ff5500;
-}
-
-.footer-bottom {
-    text-align: center;
-    padding-top: 40px;
-    margin-top: 40px;
-    border-top: 1px solid #333;
-    font-size: 14px;
-    color: #888;
-}
