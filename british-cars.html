@@ -4,34 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>british-cars</title>
-     <link rel="stylesheet" href="usa.css">
+    <link rel="stylesheet" href="bodies.css">
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="header-footer.css">
     <link rel="icon" type="images/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="british-cars.css">
 </head>
 <body>
      <header>
-        <h1>British cars</h1>
+        <h1>
+            <img src="images/uk-flag.png" alt="UK flag" class="uk-flag">
+            British cars
+        </h1>
     </header>
      <nav>
         <ul>
             <li><a href="index.html">"Home page"</a></li>
-            <li><a href="germany-cars.html">"German cars"</a></li>
-            <li><a href="italy-cars.html">"Italian cars"</a></li>
-            <li><a href="usa-cars.html">"USA cars"</a></li>
-            <li><a href="british-cars.html">"British cars"</a></li>
-            <li><a href="japanese-cars.html">"Japanese cars"</a></li>
-            <li><a href="china-cars.html">"Chinese cars"</a></li>
+            <li><a href="germany-cars.html"><img class="german_nav_flag" src="images/german_nav_flag.png"></a></li>
+            <li><a href="italy-cars.html"> <img class=italian_nav_flag src="images/italian_nav_flag.png"></a></li>
+            <li><a href="usa-cars.html"><img class="usa_flag" src="images/Flag_of_the_United_States.png"></a></li>
+            <li><a href="british-cars.html"><img class="uk_nav_flag" src="images/uk_nav_flag.png" alt=""></a></li>
+            <li><a href="japanese-cars.html"><img class=japan_nav_flag src="images/japan_nav_flag.png"></a></li>
+            <li><a href="china-cars.html"><img class="chinese_nav_flag" src="images/chinese_nav_flag.png"></a></li>
             <li><a href="contact-us.html">"Contact us"</a></li>
         </ul>
      </nav>
-        <main>
-            <section>
-                
-            </section> 
-        </main>
-            <footer>
-            <p>&copy; [team name]. All rights reserved</p>
-            </footer>
+     <main>
+        <!-- الشركة 1: Bentley -->
+        <section class="company">
+            <h2>
+                <img src="images/bentley-logo.jfif" alt="Bentley Logo" class="company-logo">
+                Bentley
+            </h2>
+            <div class="cars-container">
+                <div class="car-card">
+                    <img src="images/bentley-continental-gt.jpeg" alt="Bentley Continental GT">
+                    <h3>Bentley Continental GT</h3>
+                    <p>Luxury GT car with W12 twin-turbo engine, top speed 335 km/h, combines luxury with exceptional performance.</p>
+                </div>
+                <div class="car-card">
+                    <img id="flying-spur-bentley" src="images/bentley-flying-spur.jpeg" alt="Bentley Flying Spur">
+                    <h3>Bentley Flying Spur</h3>
+                    <p>Ultra-luxury sedan with powerful V8 engine, handcrafted interior, perfect for long distance travel in absolute comfort.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- الشركة 2: Rolls-Royce -->
+        <section class="company">
+            <h2>
+                <img src="images/rollsroyce-logo.png" alt="Rolls-Royce Logo" class="company-logo">
+                Rolls-Royce
+            </h2>
+            <div class="cars-container">
+                <div class="car-card">
+                      <video class="Rolls-Royce-Amethyst-Droptail" controls autoplay muted loop>
+                    <source src="videos/Rolls-Royce droptail.mp4" type="video/mp4">
+                    </video>
+                    <h3>Rolls-Royce Amethyst Droptail</h3>
+                    <p>
+Ultra-exclusive coachbuilt roadster with a handcrafted V12 twin-turbo engine, limited to only a few units worldwide, combining timeless Rolls-Royce luxury with bespoke design and effortless performance.</p>
+                </div>
+                <div class="car-card">
+                   <img src="images/rollsroyce-phantom.jpeg" alt="Rolls-Royce Phantom">
+                    <h3>Rolls-Royce Phantom</h3>
+                    <p>Classic sophistication at its finest, refined power, luxurious comfort and unmatched attention to detail.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- الشركة 3: Aston Martin -->
+        <section class="company">
+            <h2>
+                <img src="images/astonmartin-logo.png" alt="Aston Martin Logo" class="company-logo-astonmartin">
+                Aston Martin
+            </h2>
+            <div class="cars-container">
+                <div class="car-card">
+                <video class="aston-martin-valhalla" controls autoplay muted loop>
+                    <source src="videos/Valhalla LHD.mp4" type="video/mp4">
+                    </video>
+                    <h3>Aston Martin Valhalla</h3>
+                    <p>delivers around 937 horsepower from its twin-turbo V8 hybrid powertrain, combining extreme performance with advanced technology. It can accelerate from 0 to 100 km/h in about 2.5 seconds and reach a top speed of approximately 350 km/h, making it a true track-focused hypercar.</p>
+                </div>
+                <div class="car-card">
+                   <video class="aston-martin-valhalla" controls autoplay muted loop>
+                    <source src="videos/vantage LHD.mp4" type="video/mp4">
+                    </video>
+                    <h3>Aston Martin Vantage</h3>
+                    <p>4.0L twin-turbo V8 engine producing around 665 horsepower, delivering strong and responsive performance. It accelerates from 0 to 100 km/h in about 3.4 seconds and reaches a top speed of approximately 325 km/h, combining speed with luxury and precision handling.</p>
+                </div>
+            </div>
+        </section>
+        <section class="company">
+            <h2>
+                <img src="images/maclaren logo.png" alt="Maclaren Logo" class="company-logo-Maclaren">
+                Maclaren
+            </h2>
+            <div class="cars-container">
+                <div class="car-card">
+                    <video class="maclaren-w1" controls autoplay muted loop>
+                    <source src="videos/mclaren-w1-race-mode-video.mp4" type="video/mp4">
+                    </video>
+                    <h3>Maclaren W1</h3>
+                    <p>expected to produce over 1,200 horsepower from its advanced hybrid powertrain, accelerating from 0 to 100 km/h in under 2.5 seconds. It can reach a top speed of around 350 km/h, making it one of the fastest and most powerful hypercars ever developed.</p>
+                </div>
+                <div class="car-card">
+                    <img src="images/mclaren-m6gt-hero.jpeg" >
+                    <h3>Aston Martin Vantage</h3>
+                    <p>The McLaren M6GT delivers race-bred performance through its mid-mounted Chevrolet V8 engine, which enables a top speed of approximately 265 km/h.</p>
+                </div>
+            </div>
+        </section>
+     </main>
+     <footer>
+        <p>&copy; [team name]. All rights reserved</p>
+     </footer>
 </body>
 </html>

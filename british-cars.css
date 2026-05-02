@@ -1,0 +1,177 @@
+body{
+    background-color: #f8f8f8;
+}
+/* british-cars.css */
+
+/* تنسيق العلم جنب British cars */
+header h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.uk-flag {
+    width: 40px;
+    height: auto;
+    display: inline-block;
+}
+
+/* تنسيق أقسام الشركات */
+.company {
+    margin-bottom: 50px;
+    padding: 20px 0;
+}
+
+/* تنسيق اسم الشركة مع اللوجو */
+.company h2 {
+    font-size: 35px;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ccc;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.company-logo {
+    width: 100px;
+    height: auto;
+    display: inline-block;
+}
+
+/* حاوية العربيات */
+.cars-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* بطاقة السيارة */
+.car-card {
+    flex: 1;
+    min-width: 280px;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.car-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.car-card img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    border-bottom: 1px solid #e0e0e0;
+    
+
+}
+
+.car-card h3 {
+    font-size: 20px;
+    padding: 12px 15px 5px 15px;
+    margin: 0;
+}
+
+.car-card p {
+    padding: 0 15px 15px 15px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+}
+.company-logo-astonmartin {
+    width: 150px;
+    height: auto;
+    display: inline-block;
+}
+
+/* استجابة للشاشات الصغيرة */
+@media (max-width: 768px) {
+    .cars-container {
+        flex-direction: column;
+    }
+    
+    .car-card {
+        min-width: auto;
+    }
+    
+    header h1 {
+        flex-direction: column;
+    }
+    
+    .company h2 {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.usa_flag{
+    height: 40px;
+    width: 70px;
+}
+.uk_nav_flag{
+height: 40px;
+width: 70px;
+  display: inline-block;
+  animation: bounce 1s infinite;
+
+}
+.japan_nav_flag{
+    height: 40px;
+    width: 70px;
+}
+.italian_nav_flag{
+    height: 40px;
+    width: 70px;
+}
+.german_nav_flag{
+    height: 40px;
+    width: 70px;
+}
+.chinese_nav_flag{
+    height: 40px;
+    width: 70px;
+}
+
+.maclaren-w1 {
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    width: 800px;
+    height: 480px;
+}
+.aston-martin-valhalla {
+     object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    width: 800px;
+    height: 480px;
+}
+.Rolls-Royce-Amethyst-Droptail{
+     object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    width: 800px;
+    height: 480px;
+}
+.company-logo-Maclaren { width: 100px;
+    height: auto;
+    display: inline-block;
+
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+}
