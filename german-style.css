@@ -14,6 +14,23 @@
     padding: 40px 0;
           }
 
+.bouncing-german {
+    font-size: 42px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    display: inline-block;
+    animation: bounce 2s ease-in-out infinite;
+                }
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+             }
+    50% {
+        transform: translateY(-15px);
+        }
+                  }
+
 .german-car {
     max-width: 1200px;
     margin: 40px auto;
@@ -111,18 +128,6 @@
 .german-car {
     margin-bottom: 80px;
             }
-
-.hero-logo {
-    text-align: center;
-            }
-
-.bouncing-german {
-    font-size: 42px;
-    font-weight: bold;
-    font-family: Arial, sans-serif;
-    display: inline-block;
-    animation: bounce 2s ease-in-out infinite;
-                }
 
                     /* Gdwel As3ar BMW */
 .bmw-table {
