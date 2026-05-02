@@ -230,28 +230,7 @@ A front mid-engine, rear-wheel-drive layout that gave it surgical precision on m
 </div>
 
 </main>
-<script>
-
-const toggleBtn = document.getElementById("toggleMode");
-/* تحميل الثيم */
-let savedTheme = localStorage.getItem("theme");
-
-if (savedTheme) {
-    document.body.classList.add(savedTheme);
-} else {
-    document.body.classList.add("light");
-}
-
-/* تغيير الثيم */
-toggleBtn.onclick = function() {
-    if (document.body.classList.contains("dark")) {
-        document.body.classList.remove("dark");
-        document.body.classList.add("light");
-        localStorage.setItem("theme", "light");
-    } else {
-        document.body.classList.remove("light");
-        document.body.classList.add("dark");
-        localStorage.setItem("theme", "dark");
+tem("theme", "dark");
     }
 };
 </script>
@@ -261,21 +240,7 @@ toggleBtn.onclick = function() {
 <script>
 const clickSound = document.getElementById("clickSound");
 
-document.querySelectorAll(".car").forEach(car => {
-    car.addEventListener("click", function() {
-        clickSound.currentTime = 0;
-        clickSound.play();
-    });
-});
-</script>
-
-          <footer>
-    <p>&copy; Team Name. All rights reserved</p>
-
-    <div class="social">
-        <a href="#">Facebook</a>
-        <a href="#">Instagram</a>
-        <a href="#">Twitter</a>
+          <footer> &copy; Team Name. All rights reserved
     </div>
     
 </footer>
