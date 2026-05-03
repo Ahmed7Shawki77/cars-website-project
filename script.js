@@ -18,13 +18,11 @@ function toggleTheme() {
 function openForm(type) {
     let person = prompt("Enter your username to " + type + ":");
     if (person) {
-    
         localStorage.setItem('currentUser', person);
-        alert("Welcome, " + person + "! You are now " + type + "ed in.");
-        
+        alert("Welcome, " + person + "!");
         const authSection = document.querySelector('.auth-buttons');
-        if(authSection) {
-            authSection.innerHTML = `<span style="color:white; font-weight:bold;">Welcome, ${person}</span>`;
+        if (authSection) {
+            authSection.innerHTML = `<span style="color:white;">Welcome, ${person}</span>`;
         }
     }
 }
@@ -106,25 +104,15 @@ function initTestDriveForm() {
 
 
 window.onload = function() {
-    
     const savedTheme = localStorage.getItem("userTheme") || "light";
     document.body.classList.add(savedTheme + "-theme");
-
-    
     const savedUser = localStorage.getItem('currentUser');
-    if (savedUser) {
-        console.log("Logged in user: " + savedUser);
+    const authSection = document.querySelector('.auth-buttons');
+    if (savedUser && authSection) {
+        authSection.innerHTML = `<span style="color:white;">Welcome, ${savedUser}</span>`;
     }
 
-    
-    const lastSearch = sessionStorage.getItem('lastSearch');
-    const searchInput = document.querySelector('.glass-search');
-    if (lastSearch && searchInput) {
-        searchInput.placeholder = "Last search: " + lastSearch;
-    }
-
-    
     initSearch();
     initContactForm();
     initTestDriveForm();
-};g
+};
