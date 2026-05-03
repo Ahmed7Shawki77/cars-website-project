@@ -10,30 +10,19 @@ html,body{
     padding: 0;
     box-sizing: border-box;
 }
-nav{
-    position: relative;
-    top: -20px;
-    left: 50%;
-    transform: translatex(-50%);
-    z-index: 1000; 
-    width: 100%;
-}
 nav ul {
-   background-color: black;
-   background-color: rgba(255,255,255,0.1);
-   backdrop-filter: blur(20px) saturate(180%);
-   -webkit-backdrop-filter: blur(20px) saturate(180%);
-   border: 1px solid rgba(255,255,255,0.7);
-   border-top: 1px solid rgba(255,255,255,0.8);
-   border-left: 1px solid rgba(255,255,255,0.4);
-   border-radius: 10px;
-   box-shadow: 0 10px 40px 0 rgba(0,0,0,0.4);
-   margin: 10px 20px;
-   padding: 15px 20px ;
-   display: flex;
-   justify-content: center;
-   flex-direction: row;
-   list-style: none;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    margin-top: 0;
+    background: white;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    padding: 20px 0px;
+    width: 100%;
+    margin: 0;
 }
 /* box-shadow: 0 8px 20px rgba(0,0,0,0.5);
     display: flex;
