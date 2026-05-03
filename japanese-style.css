@@ -15,7 +15,9 @@ body {
     color: transparent;
     letter-spacing: 2px;
 }
-
+body{
+   background-color: #c0bcbc;
+}
 /*دا هنا انا بتكلم على شغل كل براند انا اشتغلت عليها  */
 .brand {
     width: 85%;
