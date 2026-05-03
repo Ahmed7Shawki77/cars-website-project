@@ -1,9 +1,12 @@
 body {
-    margin: 0;
     font-family: 'Poppins', sans-serif;
     background-color: #c0bcbc;
     color: white;
-    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+   
 }
 html {
     background-color: #c0bcbc;
