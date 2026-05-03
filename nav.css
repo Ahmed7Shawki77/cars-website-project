@@ -71,35 +71,3 @@ nav ul li a:hover{
     transition: all 0.3s ease;
 }
 }
-
-
-
-:root {
-    --bg-color: #f4f4f4;
-    --text-color: #333;
-    --card-bg: #ffffff;
-}
-
-
-body.dark-theme {
-    --bg-color: #1a1a1a;
-    --text-color: #f4f4f4;
-    --card-bg: #2d2d2d;
-}
-
-body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.theme-toggle-btn {
-    padding: 8px 12px;
-    cursor: pointer;
-    border-radius: 20px;
-    border: 1px solid #555;
-    background: #e4ad64;
-    color: white;
-    font-weight: bold;
-    margin-left: 10px;
-}
