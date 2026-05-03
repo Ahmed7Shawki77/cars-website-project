@@ -5,6 +5,9 @@ body {
     color: white;
     margin:0 auto;
 }
+html {
+    background-color: #c0bcbc;
+}
 section {
     padding: 40px;
 }
