@@ -13,7 +13,9 @@ body{
     align-items: center;
     gap: 3px;
 }
-
+body{
+   background-color: #c0bcbc;
+}
 .company-logo {
     width: 100px;
     height: auto;
