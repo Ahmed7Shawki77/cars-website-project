@@ -9,31 +9,60 @@ function toggleTheme() {
 }
 
 // --- 2. LOGIN / SIGNUP / LOGOUT LOGIC ---
+// --- 2. LOGIN / SIGNUP / LOGOUT LOGIC ---
+
 function openForm(type) {
-    let person = prompt(`Enter your username to ${type}:`);
-    
-    if (person && person.trim() !== "") {
-        // If it's a Sign Up, we also ask for a password
-        if (type === 'Sign Up') {
-            let pass = prompt("Create a password:");
-            if (!pass || pass.length < 4) {
-                alert("Sign up failed: Password must be at least 4 characters.");
-                return;
-            }
-            // In a real app, we'd save the password too, 
-            // but for this project, we'll just save the user.
+    if (type === 'Sign Up') {
+        // --- SIGN UP PHASE ---
+        let person = prompt("Create a Username:");
+        if (!person || person.trim() === "") {
+            alert("Sign Up failed: Username is required.");
+            return;
         }
 
+        let pass = prompt("Create a Password (min. 4 characters):");
+        if (!pass || pass.length < 4) {
+            alert("Sign Up failed: Password must be at least 4 characters.");
+            return;
+        }
+
+        // Save both to localStorage
+        // We use a prefix 'pwd_' so we can find this specific user's password later
+        localStorage.setItem(`pwd_${person}`, pass);
         localStorage.setItem('currentUser', person);
-        alert(`Welcome, ${person}! You have successfully ${type === 'Login' ? 'logged in' : 'signed up'}.`);
-        location.reload(); // Refresh to update the UI
+        
+        alert(`Account created! Welcome, ${person}.`);
+        location.reload();
+    } 
+    
+    else if (type === 'Login') {
+        // --- LOGIN PHASE ---
+        let person = prompt("Enter your Username:");
+        if (!person) return;
+
+        // Check if user exists in our "database" (localStorage)
+        let savedPwd = localStorage.getItem(`pwd_${person}`);
+
+        if (!savedPwd) {
+            alert("User does not exist. Please Sign Up first.");
+            return;
+        }
+
+        let passCheck = prompt("Enter your Password:");
+        if (passCheck === savedPwd) {
+            localStorage.setItem('currentUser', person);
+            alert(`Welcome back, ${person}!`);
+            location.reload();
+        } else {
+            alert("Incorrect password. Access denied.");
+        }
     }
 }
 
 function logout() {
     localStorage.removeItem('currentUser');
-    alert("Logged out successfully.");
-    location.reload(); // Refresh to show Login/Signup buttons again
+    alert("You have been logged out.");
+    location.reload();
 }
 
 // --- 3. SEARCH BAR LOGIC ---
