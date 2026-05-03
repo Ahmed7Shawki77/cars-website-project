@@ -244,6 +244,7 @@ body{
 }
 .cars-table td {
   background-color: #c0bcbc;
+  color: #800020;
 }
 
 
@@ -258,7 +259,16 @@ body{
 .cars-table tr:last-child td {
   border-bottom: none;
 }
-
+button,a,.clickable,img {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+button:active,
+a:active,
+.clickable:active,
+img:active {
+  transform:scale(0.97);
+}
 
 
  
