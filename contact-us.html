@@ -3,64 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Contact-us</title>
+    <title>Contact Us - AutoWorld</title>
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="header-footer.css">
-    <link rel="icon" type="images/x-icon" href="images/favicon.icon"> 
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico"> 
     <link rel="stylesheet" href="contactus.css">
 </head>
 <body>
 
-     <header>
+    <header>
         <h1>Contact Us</h1>
     </header>
-     <nav>
-         <button class="theme-toggle-btn" onclick="toggleTheme()">🌓 Switch Theme</button>
-    
-    <div class="auth-buttons">
+
+    <nav>
+        <!-- Theme Toggle -->
+        <button class="theme-toggle-btn" onclick="toggleTheme()">🌓 Switch Theme</button>
+        
+        <!-- Navigation Links (Moved out of auth-buttons) -->
         <ul>
-             <li><a href="index.html">"Home page"</a></li>
-            <li><a href="germany-cars.html">"German cars"</a></li>
-            <li><a href="italy-cars.html">"Italian cars"</a></li>
-            <li><a href="usa-cars.html">"USA cars"</a></li>
-            <li><a href="british-cars.html">"British cars"</a></li>
-            <li><a href="japanese-cars.html">"Japanese cars"</a></li>
-            <li><a href="china-cars.html">"Chinese cars"</a></li>
+            <li><a href="index.html">Home page</a></li>
+            <li><a href="germany-cars.html">German cars</a></li>
+            <li><a href="italy-cars.html">Italian cars</a></li>
+            <li><a href="usa-cars.html">USA cars</a></li>
+            <li><a href="british-cars.html">British cars</a></li>
+            <li><a href="japanese-cars.html">Japanese cars</a></li>
+            <li><a href="china-cars.html">Chinese cars</a></li>
             <li><a href="test.html">Test Drive</a></li>
-            <li><a href="contact-us.html">"Contact us"</a></li>
+            <li><a href="contact-us.html">Contact us</a></li>
         </ul>
-     </nav>
-        <main>
-                 <section class="contact-section">
-        <div class="container">
-            <h2>Get In Touch</h2>
-            <p>Have questions about our latest models? Contact our team.</p>
 
-            <div class="contact-wrapper">
-                <form id="contactForm" class="contact-form">
-                    <input type="text" id="userName" placeholder="Full Name" required>
-                    <input type="email" id="userEmail" placeholder="Email Address" required>
-                    <textarea id="userMessage" rows="5" placeholder="Your Message" required></textarea>
-                    <button type="submit">Send Message</button>
-                </form>
+        <!-- This stays empty on Contact Us page so script.js doesn't crash -->
+        <div class="auth-buttons"></div>
+    </nav>
 
-                <div class="map-container">
-                    <iframe 
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.819243221671!2d-0.13061242337621184!3d51.50735094587391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604c38c8cd1d9%3A0xb78f2474b9a45aa9!2sTrafalgar%20Square!5e0!3m2!1sen!2suk!4v1710000000000" 
-    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
-</iframe>
+    <main>
+        <section class="contact-section">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <p>Have questions about our latest models? Contact our team.</p>
+
+                <div class="contact-wrapper">
+                    <form id="contactForm" class="contact-form">
+                        <input type="text" id="userName" placeholder="Full Name" required>
+                        <input type="email" id="userEmail" placeholder="Email Address" required>
+                        <textarea id="userMessage" rows="5" placeholder="Your Message" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.819243221671!2d-0.13061242337621184!3d51.50735094587391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604c38c8cd1d9%3A0xb78f2474b9a45aa9!2sTrafalgar%20Square!5e0!3m2!1sen!2suk!4v1710000000000" 
+                            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
                 </div>
+                
+                <!-- Status message for validation results -->
+                <div id="statusMessage" class="status-msg"></div>
             </div>
-            
-            <div id="statusMessage" class="status-msg"></div>
-        </div>
-    </section>
+        </section>
+    </main>
 
+    <footer>
+        &copy; 2025 AutoWorld Team. All rights reserved.
+    </footer>
+
+    <!-- Script at the very bottom -->
     <script src="script.js"></script>
-            </section>
-        </main>
-            <footer>
-            &copy; [team name]. All rights reserved
-            </footer>
 </body>
 </html>
