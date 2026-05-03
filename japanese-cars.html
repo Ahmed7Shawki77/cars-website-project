@@ -14,6 +14,9 @@
         <h1>Japanese cars</h1>
     </header>
      <nav>
+         <button class="theme-toggle-btn" onclick="toggleTheme()">🌓 Switch Theme</button>
+    
+    <div class="auth-buttons">
         <ul>
              <li><a href="index.html">"Home page"</a></li>
             <li><a href="germany-cars.html">"German cars"</a></li>
@@ -25,9 +28,6 @@
             <li><a href="test.html">Test Drive</a></li>
             <li><a href="contact-us.html">"Contact us"</a></li>
         </ul>
-</div>
-
-<h2 id="welcomeMessage"></h2>
      </nav>
         <main>
 
@@ -224,23 +224,8 @@ A front mid-engine, rear-wheel-drive layout that gave it surgical precision on m
         </div>
     </section>
 
-    <button id="toggleMode">🌙</button>
+    
 
-    <div class="popup" id="popup">
-    <img id="popup-img">
-</div>
-
-</main>
-tem("theme", "dark");
-    }
-};
-</script>
-<audio id="clickSound">
-    <source src="sounds/car-click.mp3" type="audio/mpeg">
-</audio>
-<script>
-const clickSound = document.getElementById("clickSound");
-</script>
           <footer>
                <p>&copy; [team name]. All rights reserved</p>
             </footer>
