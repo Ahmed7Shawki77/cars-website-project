@@ -1,10 +1,8 @@
 body {
+   margin: 0 auto;
     font-family: 'Poppins', sans-serif;
-    background-color: #c0bcbc;
+    background: #c0bcbc;
     color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
 }
    
 }
