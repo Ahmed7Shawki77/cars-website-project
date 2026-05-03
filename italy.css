@@ -3,7 +3,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background: #c0bcbc;
     color: white;
-     margin-left: 30%;
+     margin:0 auto;
 }
 section {
     padding: 40px;
