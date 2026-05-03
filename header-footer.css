@@ -31,6 +31,38 @@ footer{
     color: #681A15;
     font-family: 'Times New Roman', Times, serif ;
 }
+
+:root {
+    --bg-color: #f4f4f4;
+    --text-color: #333;
+    --card-bg: #ffffff;
+}
+
+
+body.dark-theme {
+    --bg-color: #1a1a1a;
+    --text-color: #f4f4f4;
+    --card-bg: #2d2d2d;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.theme-toggle-btn {
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 1px solid #555;
+    background: #e4ad64;
+    color: white;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+
 @media screen and (max-width:768px){
     footer{
     text-align: center;
