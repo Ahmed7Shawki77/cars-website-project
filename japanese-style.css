@@ -1,8 +1,7 @@
 /*دي بتتحكم في لون البيدج كلها */
 body {
     font-family: Arial;
-    background: #c0bcbc;
-    color: #c0bcbc;
+      background-color: #c0bcbc; 
 }
 
 /*دا هنا بنتحكم في اي حاجة تخص عنوان الصفحة من فوق الجبانيز كارز */
