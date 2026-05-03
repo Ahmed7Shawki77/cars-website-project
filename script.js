@@ -1,8 +1,3 @@
-/**
- * AUTO WORLD CONSOLIDATED SCRIPT
- * Features: Theme Toggle, Login/Signup with Password, Logout, Form Validation
- */
-
 // --- 1. THEME TOGGLE LOGIC ---
 function toggleTheme() {
     const body = document.body;
