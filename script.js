@@ -1,53 +1,47 @@
-// --- 1. THEME TOGGLE ---
+/**
+ * AUTO WORLD CONSOLIDATED SCRIPT
+ * Features: Theme Toggle, Login/Signup with Password, Logout, Form Validation
+ */
+
+// --- 1. THEME TOGGLE LOGIC ---
 function toggleTheme() {
     const body = document.body;
-    body.classList.toggle("dark-theme"); // Simpler way to toggle
+    body.classList.toggle("dark-theme");
     
+    // Save state to LocalStorage
     const isDark = body.classList.contains("dark-theme");
     localStorage.setItem("userTheme", isDark ? "dark" : "light");
 }
 
-// --- 2. LOGIN & LOGOUT ---
+// --- 2. LOGIN / SIGNUP / LOGOUT LOGIC ---
 function openForm(type) {
-    let person = prompt("Enter your username to " + type + ":");
+    let person = prompt(`Enter your username to ${type}:`);
+    
     if (person && person.trim() !== "") {
+        // If it's a Sign Up, we also ask for a password
+        if (type === 'Sign Up') {
+            let pass = prompt("Create a password:");
+            if (!pass || pass.length < 4) {
+                alert("Sign up failed: Password must be at least 4 characters.");
+                return;
+            }
+            // In a real app, we'd save the password too, 
+            // but for this project, we'll just save the user.
+        }
+
         localStorage.setItem('currentUser', person);
-        location.reload(); // Refresh to show the Welcome message
+        alert(`Welcome, ${person}! You have successfully ${type === 'Login' ? 'logged in' : 'signed up'}.`);
+        location.reload(); // Refresh to update the UI
     }
 }
 
 function logout() {
-    localStorage.removeItem('currentUser'); // Requirement 8: Remove from storage
-    alert("You have been logged out.");
-    location.reload(); // Refresh to show Login/Sign Up buttons again
+    localStorage.removeItem('currentUser');
+    alert("Logged out successfully.");
+    location.reload(); // Refresh to show Login/Signup buttons again
 }
 
-// --- 3. INITIALIZATION (Read from Storage) ---
-window.onload = function() {
-    // A. Apply Theme
-    const savedTheme = localStorage.getItem("userTheme");
-    if (savedTheme === "dark") {
-        document.body.classList.add("dark-theme");
-    }
-
-    // B. Check User & Update UI
-    const savedUser = localStorage.getItem('currentUser');
-    const authSection = document.querySelector('.auth-buttons');
-    
-    if (savedUser && authSection) {
-        // Change Login/Sign Up buttons into a Welcome message and Logout button
-        authSection.innerHTML = `
-            <span style="margin-right:10px;">Welcome, <b>${savedUser}</b></span>
-            <button class="btn" onclick="logout()" style="background:#ff4d4d;">Logout</button>
-        `;
-    }
-
-    // Initialize other features
-    initSearch();
-    if(typeof initContactForm === "function") initContactForm();
-};
-
-// --- 3. SEARCH BAR LOGIC (Requirement 8: SessionStorage) ---
+// --- 3. SEARCH BAR LOGIC ---
 function initSearch() {
     const searchBtn = document.querySelector('.glass-search-btn');
     const searchInput = document.querySelector('.glass-search');
@@ -65,7 +59,7 @@ function initSearch() {
     }
 }
 
-// --- 4. CONTACT FORM VALIDATION (Requirement 7 & 8) ---
+// --- 4. FORM VALIDATIONS (Contact & Test Drive) ---
 function initContactForm() {
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
@@ -82,45 +76,59 @@ function initContactForm() {
             if (message.length < 10) errors.push("Message too short.");
 
             if (errors.length > 0) {
-                statusMsg.style.color = "red";
+                statusMsg.style.color = "#ff4d4d";
                 statusMsg.innerHTML = errors.join(" | ");
             } else {
-                localStorage.setItem('lastContact', name);
-                statusMsg.style.color = "green";
-                statusMsg.innerHTML = "✅ Saved to storage and Sent!";
+                localStorage.setItem('lastContactName', name);
+                statusMsg.style.color = "#4CAF50";
+                statusMsg.innerHTML = "✅ Message saved to storage and sent!";
                 this.reset();
             }
         });
     }
 }
 
-// --- 5. TEST DRIVE FORM VALIDATION (Requirement 7) ---
 function initTestDriveForm() {
     const tdForm = document.getElementById('testdriveForm');
     if (tdForm) {
         tdForm.addEventListener('submit', function(e) {
-            const name = this.querySelector('input[placeholder="Full Name"]').value;
-            if (name.length < 2) {
+            const nameInput = this.querySelector('input[placeholder="Full Name"]');
+            if (nameInput && nameInput.value.length < 2) {
                 e.preventDefault();
-                alert("❌ Custom Validation: Name is required.");
+                alert("❌ Please enter a valid name for the test drive.");
             }
         });
     }
 }
 
-// --- 6. INITIALIZATION (Read from Storage) ---
+// --- 5. INITIALIZATION (On Page Load) ---
 window.onload = function() {
-    // Read Theme
+    // A. Apply Saved Theme
     const savedTheme = localStorage.getItem("userTheme") || "light";
-    document.body.classList.add(savedTheme + "-theme");
-
-    // Read User
-    const savedUser = localStorage.getItem('currentUser');
-    const authSection = document.querySelector('.auth-buttons');
-    if (savedUser && authSection) {
-        authSection.innerHTML = `<span style="color:white; font-weight:bold; padding: 10px;">Welcome, ${savedUser}</span>`;
+    if (savedTheme === "dark") {
+        document.body.classList.add("dark-theme");
     }
 
+    // B. Manage Auth UI (Login vs Welcome/Logout)
+    const savedUser = localStorage.getItem('currentUser');
+    const authSection = document.querySelector('.auth-buttons');
+    
+    if (savedUser && authSection) {
+        // If user is logged in, replace buttons with Welcome message and Logout
+        authSection.innerHTML = `
+            <span style="color:white; font-weight:bold; margin-right:15px;">Welcome, ${savedUser}</span>
+            <button class="btn" onclick="logout()" style="background:#ff4d4d;">Logout</button>
+        `;
+    }
+
+    // C. Persist Search Placeholder
+    const lastSearch = sessionStorage.getItem('lastSearch');
+    const searchInput = document.querySelector('.glass-search');
+    if (lastSearch && searchInput) {
+        searchInput.placeholder = "Last search: " + lastSearch;
+    }
+
+    // D. Start Listeners
     initSearch();
     initContactForm();
     initTestDriveForm();
