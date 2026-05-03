@@ -242,6 +242,9 @@ body{
   font-size: 18px;
   font-weight: bold;
 }
+.cars-table td {
+  background-color: #c0bcbc;
+}
 
 
 .cars-table td:hover,
