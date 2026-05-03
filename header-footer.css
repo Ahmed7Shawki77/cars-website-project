@@ -1,97 +1,59 @@
-/* --- 1. SET THE COLORS FOR LIGHT MODE --- */
 :root {
     --bg-color: #f4f4f4;
     --text-color: #333;
-    /* Light mode gradient: Grey to White */
     --nav-gradient: linear-gradient(135deg, #e0e0e0, #ffffff); 
     --accent-color: #681A15;
-    --card-bg: #ffffff;
 }
 
-/* --- 2. SET THE COLORS FOR DARK MODE --- */
 body.dark-theme {
     --bg-color: #1a1a1a;
     --text-color: #f4f4f4;
-    /* Dark mode gradient: Your original colors */
     --nav-gradient: linear-gradient(135deg, #232526, #414345);
     --accent-color: #e4ad64; 
-    --card-bg: #2d2d2d;
 }
 
-/* --- 3. APPLY THE VARIABLES TO YOUR ELEMENTS --- */
-
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+/* Force the body and main content area to follow the theme */
+body, main, section, .container {
+    background-color: var(--bg-color) !important;
+    color: var(--text-color) !important;
+    transition: all 0.3s ease;
 }
 
-body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    transition: background-color 0.3s ease, color 0.3s ease;
-    font-family: Arial, sans-serif;
-}
-
-header {
+header, footer {
     text-align: center;
     padding: 20px 0px;
-    /* CRITICAL: Use the variable for the gradient */
     background-image: var(--nav-gradient) !important;
-    width: 100%;
+    color: var(--accent-color) !important;
     font-weight: bold;
-    color: var(--accent-color);
-    font-family: 'Times New Roman', Times, serif;
-    border-bottom: 2px solid var(--accent-color);
+    font-family: 'Times New Roman', serif;
 }
 
-footer {
-    text-align: center;
-    padding: 15px 0px;
-    /* CRITICAL: Use the variable for the gradient */
-    background-image: var(--nav-gradient) !important;
-    width: 100%;
-    color: var(--accent-color);
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    margin-top: 20px;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(0,0,0,0.1);
 }
-
-h1 {
-    margin: 0;
-}
-
-/* --- 4. BUTTONS & UI --- */
 
 .theme-toggle-btn {
-    padding: 8px 15px;
+    padding: 8px 12px;
     cursor: pointer;
     border-radius: 20px;
-    border: 1px solid #555;
     background: #e4ad64;
-    color: #333;
     font-weight: bold;
-    margin: 10px;
-    transition: transform 0.2s;
 }
 
-.theme-toggle-btn:hover {
-    transform: scale(1.05);
-}
-
-/* Style for the Logout button specifically */
-.auth-buttons button {
-    padding: 8px 15px;
-    border: none;
-    border-radius: 5px;
+.logout-btn {
+    background: #ff4d4d;
     color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 4px;
     cursor: pointer;
-    font-weight: bold;
 }
 
-/* --- 5. RESPONSIVE DESIGN --- */
-@media screen and (max-width:768px) {
-    header, footer {
-        padding: 10px 0px;
-    }
+.welcome-txt {
+    margin-right: 10px;
+    font-weight: bold;
 }
