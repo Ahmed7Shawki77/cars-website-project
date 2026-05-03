@@ -1,15 +1,9 @@
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Full height of the screen */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #c0bcbc;
+    background-color: #0b0b0b;
     color: #080808;
     margin: 0;
-}
-main {
-    flex: 1; 
 }
 
 .container {
