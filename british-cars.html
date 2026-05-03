@@ -12,22 +12,29 @@
 <body>
      <header>
         <h1>
-            <img src="images/uk-flag.png" alt="UK flag" class="uk-flag">
             British cars
         </h1>
     </header>
-     <nav>
+     nav>
+        <!-- Theme Toggle -->
+        <button class="theme-toggle-btn" onclick="toggleTheme()">🌓 Switch Theme</button>
+        
+        <!-- Navigation Links (Moved out of auth-buttons) -->
         <ul>
-            <li><a href="index.html">"Home page"</a></li>
-            <li><a href="germany-cars.html"><img class="german_nav_flag" src="images/german_nav_flag.png"></a></li>
-            <li><a href="italy-cars.html"> <img class=italian_nav_flag src="images/italian_nav_flag.png"></a></li>
-            <li><a href="usa-cars.html"><img class="usa_flag" src="images/Flag_of_the_United_States.png"></a></li>
-            <li><a href="british-cars.html"><img class="uk_nav_flag" src="images/uk_nav_flag.png" alt=""></a></li>
-            <li><a href="japanese-cars.html"><img class=japan_nav_flag src="images/japan_nav_flag.png"></a></li>
-            <li><a href="china-cars.html"><img class="chinese_nav_flag" src="images/chinese_nav_flag.png"></a></li>
-            <li><a href="contact-us.html">"Contact us"</a></li>
+            <li><a href="index.html">Home page</a></li>
+            <li><a href="germany-cars.html">German cars</a></li>
+            <li><a href="italy-cars.html">Italian cars</a></li>
+            <li><a href="usa-cars.html">USA cars</a></li>
+            <li><a href="british-cars.html">British cars</a></li>
+            <li><a href="japanese-cars.html">Japanese cars</a></li>
+            <li><a href="china-cars.html">Chinese cars</a></li>
+            <li><a href="test.html">Test Drive</a></li>
+            <li><a href="contact-us.html">Contact us</a></li>
         </ul>
-     </nav>
+
+        <!-- This stays empty on Contact Us page so script.js doesn't crash -->
+        <div class="auth-buttons"></div>
+    </nav>
      <main>
     
         <section class="company">
