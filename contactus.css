@@ -1,8 +1,4 @@
-html, body, main, section {
-    background-color: transparent !important;
-    height: 100%; /* Required for the flex-basis to work */
-    margin: 0;
-}
+
 body {
     display: flex;
     flex-direction: column;
