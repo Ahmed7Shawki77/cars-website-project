@@ -16,18 +16,22 @@
         <h1>Test Drive</h1>
     </header>
      <nav>
-        <ul>
-             <li><a href="index.html">"Home page"</a></li>
-            <li><a href="germany-cars.html">"German cars"</a></li>
-            <li><a href="italy-cars.html">"Italian cars"</a></li>
-            <li><a href="usa-cars.html">"USA cars"</a></li>
-            <li><a href="british-cars.html">"British cars"</a></li>
-            <li><a href="japanese-cars.html">"Japanese cars"</a></li>
-            <li><a href="china-cars.html">"Chinese cars"</a></li>
-            <li><a href="test.html">Test Drive</a></li>
-            <li><a href="contact-us.html">"Contact us"</a></li>
-        </ul>
-     </nav>
+    <button class="theme-toggle-btn" onclick="toggleTheme()">🌓 Switch Theme</button>
+    
+    <ul>
+        <li><a href="index.html">Home page</a></li>
+        <li><a href="germany-cars.html">German cars</a></li>
+        <li><a href="italy-cars.html">Italian cars</a></li>
+        <li><a href="usa-cars.html">USA cars</a></li>
+        <li><a href="british-cars.html">British cars</a></li>
+        <li><a href="japanese-cars.html">Japanese cars</a></li>
+        <li><a href="china-cars.html">Chinese cars</a></li>
+        <li><a href="test.html">Test Drive</a></li>
+        <li><a href="contact-us.html">Contact us</a></li>
+    </ul>
+
+    <div class="auth-buttons"></div>
+</nav>
 
   <main>
   <section class="testdrive-section">
@@ -88,7 +92,7 @@ document.getElementById('testdriveForm').addEventListener('submit', function(e) 
   const name = document.querySelector('input[placeholder="Full Name"]').value;
   const phone = document.querySelector('input[placeholder="Phone Number"]').value;
   const email = document.querySelector('input[placeholder="Email Address"]').value;
-  const car = document.querySelector('input[placeholder="Car Model (e.g., BYD SEALION 7)"]').value;
+  const car = document.querySelector('input[placeholder="Car Model"]').value;
   const genderSelected = document.querySelector('input[name="gender"]:checked');
 
   if (!name || !phone || !email || !car || !genderSelected) {
