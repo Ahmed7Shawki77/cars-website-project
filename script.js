@@ -1,35 +1,51 @@
-// --- 1. THEME TOGGLE (Requirement 8: LocalStorage) ---
+// --- 1. THEME TOGGLE ---
 function toggleTheme() {
     const body = document.body;
-    let theme = "light";
-
-    if (body.classList.contains("light-theme")) {
-        body.classList.remove("light-theme");
-        body.classList.add("dark-theme");
-        theme = "dark";
-    } else {
-        body.classList.remove("dark-theme");
-        body.classList.add("light-theme");
-        theme = "light";
-    }
-    localStorage.setItem("userTheme", theme);
+    body.classList.toggle("dark-theme"); // Simpler way to toggle
+    
+    const isDark = body.classList.contains("dark-theme");
+    localStorage.setItem("userTheme", isDark ? "dark" : "light");
 }
 
-// --- 2. LOGIN / SIGN UP (Requirement 8: LocalStorage) ---
-// This function MUST be global for the HTML onclick to work
+// --- 2. LOGIN & LOGOUT ---
 function openForm(type) {
     let person = prompt("Enter your username to " + type + ":");
     if (person && person.trim() !== "") {
         localStorage.setItem('currentUser', person);
-        alert("Welcome, " + person + "! You are now logged in.");
-        
-        // Update the buttons to show the name (if we are on the Home Page)
-        const authSection = document.querySelector('.auth-buttons');
-        if (authSection) {
-            authSection.innerHTML = `<span style="color:white; font-weight:bold; padding: 10px;">Welcome, ${person}</span>`;
-        }
+        location.reload(); // Refresh to show the Welcome message
     }
 }
+
+function logout() {
+    localStorage.removeItem('currentUser'); // Requirement 8: Remove from storage
+    alert("You have been logged out.");
+    location.reload(); // Refresh to show Login/Sign Up buttons again
+}
+
+// --- 3. INITIALIZATION (Read from Storage) ---
+window.onload = function() {
+    // A. Apply Theme
+    const savedTheme = localStorage.getItem("userTheme");
+    if (savedTheme === "dark") {
+        document.body.classList.add("dark-theme");
+    }
+
+    // B. Check User & Update UI
+    const savedUser = localStorage.getItem('currentUser');
+    const authSection = document.querySelector('.auth-buttons');
+    
+    if (savedUser && authSection) {
+        // Change Login/Sign Up buttons into a Welcome message and Logout button
+        authSection.innerHTML = `
+            <span style="margin-right:10px;">Welcome, <b>${savedUser}</b></span>
+            <button class="btn" onclick="logout()" style="background:#ff4d4d;">Logout</button>
+        `;
+    }
+
+    // Initialize other features
+    initSearch();
+    if(typeof initContactForm === "function") initContactForm();
+};
 
 // --- 3. SEARCH BAR LOGIC (Requirement 8: SessionStorage) ---
 function initSearch() {
