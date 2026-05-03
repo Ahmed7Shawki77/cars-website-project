@@ -1,9 +1,9 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background: #c0bcbc;
+    background-color: #c0bcbc;
     color: white;
-     margin:0 auto;
+    margin:0 auto;
 }
 section {
     padding: 40px;
