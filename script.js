@@ -2,8 +2,8 @@
 function toggleTheme() {
     const body = document.body;
     body.classList.toggle("dark-theme");
+    console.log("Dark mode is now:", body.classList.contains("dark-theme")); // Debug line
     
-    // Save state to LocalStorage
     const isDark = body.classList.contains("dark-theme");
     localStorage.setItem("userTheme", isDark ? "dark" : "light");
 }
