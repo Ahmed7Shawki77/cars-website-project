@@ -214,7 +214,6 @@ html,body{
     color: darkorange;
     list-style: none;
     margin-left: 15.5%;
-    margin-bottom: 40px;
     width: 70%;
     font-family: monospace;
     font-weight: bold;
@@ -247,58 +246,6 @@ td:hover{
     transition: all 1s cubic-bezier(0.39, 0.58, 0.57, 1);
     cursor: pointer;
 }
-.form_usa{
-     width: fit-content;
-    margin: 20px auto !important;
-    background: #ffffff;
-    padding: 15px !important;
-    border-radius: 15px;
-    display: block !important;
-    box-shadow: 0 6px 10px rgb(0 0 0 / 40%);
-    transition: all 1s cubic-bezier(0.39, 0.58, 0.57, 1);
-    cursor: pointer;
-}
-input{
-    font-family: monospace;
-    border-radius: 15px;
-    border: 8px solid #444;
-}
-.name-model-wrapper,.company-country-wrapper{
-    gap:30px;
-}
-label{
-    color: #681A15;
-    cursor: pointer;
-}
-::placeholder{
-    text-align: center;
-    color: #681A15;
-    font-weight: bold;
-}
-.button{
-    margin-left: 39%;
-    gap: 50px;
-}
-.b1,.b2{
-    background-color: grey;
-    border-radius: 8px;
-}
-.b1:hover{
-     background-color: #00695f;
-     border-radius: 8px;
-     cursor: cell;
-     transform: translateY(-5px);
-     box-shadow: 0 5px 10px rgba(0,0,0,0.4);
-     transition:0.5sec;
- }
- .b2:hover{
-     background-color: #c21A09;
-     border-radius: 8px;
-     cursor: not-allowed;
-      transform: translateY(-5px);
-     box-shadow: 0 5px 10px rgba(0,0,0,0.4);
-     transition:0.5sec;
- }
 @media screen and (max-width:768px){
     .dodge_logo{
     display: flex;
