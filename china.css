@@ -4,104 +4,9 @@
   box-sizing:border-box;
   font-family: Arial, sans-serif;
 }
-.first nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.7);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  padding: 15px 40px;
+body{
+  background-color:#c0bcbc;
 }
-.first nav ul {
-  display: flex;
-  list-style: none;
-  gap: 30px;
-  margin: 0;
-  padding: 0;
-}
-
-.first nav ul li a {
-  text-decoration: none;
-  color: white;
-  font-size: 18px;
-  font-family: 'Arial', sans-serif;
-  transition: all 0.3s ease;
-  padding-bottom: 5px;
-  position: relative;
-  list-style: none;
-}
-
-.first nav ul li a:hover {
-  font-size: 20px;
-  color: #ab062f;
-}
-
-.first nav ul li a::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0%;
-  height: 2px;
-  background-color: #800020;
-  transition: width 0.3s ease;
-}
-
-.first nav ul li a:hover::after {
-  width: 100%;
-}
-.dropdown {
-  position: relative;
-  flex-direction: column;
-  display: flex;
-}
-
-.dropdown-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #f5f5f5;
-  list-style: none;
-  padding: 10px 0;
-  margin: 0;
-  border-radius: 8px;
-  min-width: 160px;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-10px);
-  transition: all 0.3s ease;
-  z-index: 100;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  display: flex;
-  flex-direction: column;
-}
-
-.dropdown:hover .dropdown-menu {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-.dropdown-menu li {
-  display: block;
-  width: 100%;
-}
-
-.dropdown-menu .li a {
-  color: black;
-  padding: 10px 20px;
-  display: block;
-  font-size: 16px;
-  transition: all 0.2s ease;
-}
-
-.dropdown-menu .li a:hover {
-  background-color: #800020;
-  color: whitesmoke;
-  padding-left: 25px;  
-}
-
 .logo{
   width: 70px;
   height: 70px;
@@ -113,21 +18,26 @@
   border: 2px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
   transition: 0.3s;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 .logo:hover{
   transform: scale(1.1) rotate(5deg);
-}*/
-body{
-  background-color:#c0bcbc;
 }
+
 .company-header{
     display:flex;
-    justify-content:center;
+    justify-content: flex-start;
     align-items:center;
     gap:10px;
     text-align:center;
     margin-top: 20px;
     margin-bottom: 30px;
+   box-sizing: border-box;
 }
 
 .company-logo {
@@ -258,16 +168,6 @@ body{
 
 .cars-table tr:last-child td {
   border-bottom: none;
-}
-button,a,.clickable,img {
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-button:active,
-a:active,
-.clickable:active,
-img:active {
-  transform:scale(0.97);
 }
 
 
