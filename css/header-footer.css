@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    padding: 20px;
+    background-color: #444;
+    text-align: center;
+    color: #681A15;
+    font-family: sans-serif;
+    font-weight: 800;
+}
+footer{
+    padding: 20px;
+    background-color: #444;
+    text-align: center;
+    color: #681A15;
+    font-family: sans-serif;
+    font-weight: 800;
+}
+.contact_us{
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    z-index: 1000;
+}
+@media screen and (max-width:768px){
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    padding: 20px;
+    background-color: #444;
+    text-align: center;
+    color: #681A15;
+    font-family: sans-serif;
+    font-weight: 800;
+}
+footer{
+    padding: 20px;
+    background-color: #444;
+    text-align: center;
+    color: #681A15;
+    font-family: sans-serif;
+    font-weight: 800;
+}
+.contact_us{
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    z-index: 1000;
+}
+}
