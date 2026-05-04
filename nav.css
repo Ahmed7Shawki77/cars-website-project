@@ -24,23 +24,16 @@ nav ul {
     width: 100%;
     margin: 0;
 }
-/* box-shadow: 0 8px 20px rgba(0,0,0,0.5);
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    justify-content: center;
-    margin-top: 0;
-    background: transparent;
-    padding: 20px 0px;
-    width: 100%;
-    margin: 0;*/
 nav ul li a{
     margin-top: 0;
-    margin-left: 10px;
+    margin-left: 0px;
     text-decoration: none;
-    color: #000000;
-    font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #333;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    display: inline-block;
     line-height: normal;
 }
 nav ul li {
@@ -48,13 +41,14 @@ nav ul li {
     margin: 0 15px;
 }
 nav ul li a:hover{
-    color:#681A15;
-    background-color: #a9a9a9;
+    color:#000;
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    transform: scale(1.05);
     border: 5px solid #681A15;
     border-radius: 8px;
     transition: all 0.3s ease;
 }
-
 @media screen and (max-width:768px){
  
     nav ul {
