@@ -55,9 +55,8 @@ body.dark-theme {
 
 /* --- THE BODY (This part changes) --- */
 body, main, section, .container {
-    top: 25px;
-    position: relative;
-    background-color: var(--body-bg) !important;
+    padding-top: 25px; 
+   background-color: var(--body-bg) !important;
     color: var(--body-text) !important;
     transition: background-color 0.3s ease;
 }
