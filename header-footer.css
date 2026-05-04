@@ -63,6 +63,8 @@ body, main, section, .container {
 
 /* --- BUTTONS --- */
 .theme-toggle-btn {
+    position: relative;
+    top: -9px;
     padding: 8px 12px;
     cursor: pointer;
     border-radius: 20px;
