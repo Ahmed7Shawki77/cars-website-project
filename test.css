@@ -1,170 +1,173 @@
 body {
-    background-image: url('images/test.jpeg') !important;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-color: transparent !important;
-    position: relative;
-    z-index: 0; /* Ensures body is the base for the overlay */
+  /* Force the image to stay and kill the solid color from header-footer.css */
+  background-image: url('images/test.jpeg') !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: transparent !important; 
+  position: relative;
+  transition: background-color 0.3s ease;
 }
 
-/* This is the dimming layer */
+/* This layer sits between the image and your text to provide contrast */
 body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.2); /* Light mode overlay */
-    z-index: -1; /* Sits between image and text */
-    transition: background 0.4s ease;
-    pointer-events: none; /* Ensures you can still click buttons through it */
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2); /* Light mode dimming */
+  z-index: -1;
+  transition: background 0.4s ease;
 }
 
-/* This triggers when the button adds the class */
+/* DARK MODE OVERLAY: Dim the background image when theme is switched */
 body.dark-theme::before {
-    background: rgba(0, 0, 0, 0.75) !important;
+  background: rgba(0, 0, 0, 0.75); 
 }
 
 .testdrive-section {
-    padding: 80px 40px;
-    position: relative;
-    background-color: transparent !important;
+  padding: 80px 40px;
+  position: relative;
+  background-color: transparent !important; /* Prevents solid color overlap */
 }
 
 .testdrive-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 60px;
-    max-width: 1300px;
-    margin: 0 auto;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  max-width: 1300px;
+  margin: 0 auto;
+  align-items: center;
 }
 
 /* --- THE FORM (Glassmorphism) --- */
 .testdrive-form {
-    flex: 1;
-    max-width: 450px;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 30px;
-    padding: 40px 35px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    transition: background 0.3s ease;
+  flex: 1;
+  max-width: 450px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.3); /* Light Glass */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 30px;
+  padding: 40px 35px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: background 0.3s ease;
 }
 
+/* Dark Mode Form adjustment */
 body.dark-theme .testdrive-form {
-    background: rgba(0, 0, 0, 0.5);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.5); /* Dark Glass */
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .testdrive-form h2 {
-    text-align: center;
-    color: #fff;
-    font-size: 32px;
-    margin-bottom: 25px;
+  text-align: center;
+  color: #fff;
+  font-size: 32px;
+  margin-bottom: 25px;
 }
 
 .testdrive-form input:not([type="radio"]),
 .testdrive-form select {
-    width: 100%;
-    padding: 14px 18px;
-    margin: 12px 0;
-    border: none;
-    border-radius: 40px;
-    background: rgba(255, 255, 255, 0.8);
-    font-size: 16px;
-    outline: none;
-    display: block;
-    box-sizing: border-box;
+  width: 100%;
+  padding: 14px 18px;
+  margin: 12px 0;
+  border: none;
+  border-radius: 40px;
+  background: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  outline: none;
+  display: block;
+  box-sizing: border-box;
 }
 
 .gender-group {
-    width: 100%;
-    display: flex;
-    gap: 40px;
-    margin: 15px 0;
-    color: white;
-    font-weight: bold;
-    padding: 12px 18px;
+  width: 100%;
+  display: flex;
+  gap: 40px;
+  margin: 15px 0;
+  color: white;
+  font-weight: bold;
+  padding: 12px 18px;
 }
 
 /* --- BUTTONS --- */
 .form-buttons {
-    display: flex;
-    gap: 20px;
-    margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
 }
 
 .form-buttons button {
-    flex: 1;
-    padding: 12px;
-    border: none;
-    border-radius: 40px;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 #bookBtn {
-    background-color: #800020;
-    color: white;
+  background-color: #800020;
+  color: white;
 }
 
 #bookBtn:hover {
-    background-color: #a00028;
-    transform: scale(1.02);
+  background-color: #a00028;
+  transform: scale(1.02);
 }
 
 /* --- INFO SIDE --- */
 .testdrive-info {
-    flex: 1;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  flex: 1;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
 .testdrive-info h3 {
-    font-size: 36px;
-    margin-bottom: 25px;
-    border-left: 5px solid #ffaa00;
-    padding-left: 20px;
+  font-size: 36px;
+  margin-bottom: 25px;
+  border-left: 5px solid #ffaa00;
+  padding-left: 20px;
 }
 
 .testdrive-info p {
-    font-size: 20px;
-    margin: 15px 0;
-    line-height: 1.4;
+  font-size: 20px;
+  margin: 15px 0;
+  line-height: 1.4;
 }
 
 .testdrive-info .strong-text {
-    font-size: 22px;
-    font-weight: bold;
-    color: #ffaa00;
-    margin-top: 30px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffaa00;
+  margin-top: 30px;
 }
 
-/* --- RESPONSIVENESS --- */
 @media (max-width: 900px) {
-    .testdrive-container {
-        flex-direction: column;
-        text-align: center;
-    }
-    .testdrive-form, .testdrive-info {
-        width: 100%;
-        max-width: 100%;
-    }
-    .testdrive-info h3 {
-        font-size: 28px;
-        border-left: none;
-        padding-left: 0;
-    }
-    .gender-group {
-        justify-content: center;
-    }
+  .testdrive-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .testdrive-form, .testdrive-info {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .testdrive-info h3 {
+    font-size: 28px;
+    border-left: none;
+    padding-left: 0;
+  }
+  
+  .gender-group {
+    justify-content: center;
+  }
 }
