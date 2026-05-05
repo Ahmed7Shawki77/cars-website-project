@@ -10,7 +10,7 @@ body {
   background-attachment: fixed;
   background-color: transparent !important; 
   position: relative;
-  transition: background-color 0.3s ease;
+ /* transition: background-color 0.3s ease;*/
 }
 
 /* This layer sits between the image and your text to provide contrast */
