@@ -16,11 +16,11 @@
 <header class="first">
       <h1 class="logo">AutoWorld</h1>
   <!-- NAVBAR -->
- <nav>
-      <button class="theme-toggle-btn" onclick="toggleTheme()">🌓 Switch Theme</button>
-    
-
-    <ul>
+<nav>
+        
+        
+        <!-- Navigation Links (Moved out of auth-buttons) -->
+       <ul>
         <li><a href="index.html">Home page</a></li>
         <li><a href="germany-cars.html">German cars</a></li>
         <li><a href="italy-cars.html">Italian cars</a></li>
@@ -28,10 +28,15 @@
         <li><a href="british-cars.html">British cars</a></li>
         <li><a href="japanese-cars.html">Japanese cars</a></li>
         <li><a href="china-cars.html">Chinese cars</a></li>
-        <li><a href="test.html">Test Drive</a></li>
+        <li><a href="test.html">Drive Test</a></li>
         <li><a href="contact-us.html">Contact us</a></li>
     </ul>
-    <div class="auth-buttons">
+
+    
+    </nav>
+   <!-- Theme Toggle -->
+        <button class="theme-toggle-btn" onclick="toggleTheme()">🌓 Switch Theme</button>
+        
         <button class="btn" onclick="openForm('Login')">Login</button>
         <button class="btn" onclick="openForm('Sign Up')">Sign Up</button>
     </div>
