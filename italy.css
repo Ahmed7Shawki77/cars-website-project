@@ -4,7 +4,11 @@ body {
     background: #c0bcbc;
     color: white;
 }
-   
+.top{
+    text-align: center;
+    font-weight: bold;
+    color: #444;
+   }
 }
 html {
     background-color: #c0bcbc;
@@ -58,7 +62,11 @@ section {
     transition: 0.4s;
     border-bottom: 1px solid #333;
 }
-
+.car h3{
+    text-align: center;
+    font-weight: bold;
+    color: #444;
+}
 .car:hover {
     background: linear-gradient(to right, #c0bcbc, #c0bcbc);
 }
@@ -88,6 +96,9 @@ section {
     color: #000000;
     line-height: 1.6;
     margin: 10px 0 15px;
+    text-align: center;
+    font-weight: bold;
+    color: #444;
 }
 
 .btn {
