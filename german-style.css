@@ -25,13 +25,13 @@
     text-align: left;
               }
 
-.german-title {
+.german-title h2{
     display: flex;
     align-items: center;
     gap: 15px;
     margin-bottom: 10px;
     font-weight: bold;
-    color: #444;
+    color: #444 !important;
 }
 
 .german-car-circle {
