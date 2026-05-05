@@ -114,31 +114,25 @@ function initContactForm() {
 
 function initTestDriveForm() {
     const tdForm = document.getElementById('testdriveForm');
-    const statusMsg = document.getElementById('tdStatusMessage');
-
-    if (tdForm && statusMsg) { // Added a check to make sure both exist
+    if (tdForm) {
         tdForm.addEventListener('submit', function(e) {
-            e.preventDefault(); 
+            e.preventDefault(); // This is what keeps the message from disappearing
             
-            const nameInput = this.querySelector('input[placeholder="Full Name"]');
-            
-            if (nameInput && nameInput.value.trim().length < 2) {
+            const name = document.getElementById('tdName').value.trim();
+            const statusMsg = document.getElementById('tdStatusMessage');
+
+            // Same validation logic you used for Contact Us
+            if (name.length < 2) {
                 statusMsg.style.color = "#ff4d4d";
-                statusMsg.innerHTML = "❌ Please enter a valid name.";
+                statusMsg.innerHTML = "❌ Name too short.";
             } else {
+                // Same success logic as Contact Us
+                localStorage.setItem('lastTestDriveName', name);
                 statusMsg.style.color = "#4CAF50";
-                statusMsg.innerHTML = "✅ Test drive request sent successfully!";
-                
-                // Save to localStorage
-                if (nameInput) {
-                    localStorage.setItem('lastTestDriveName', nameInput.value);
-                }
-                
-                this.reset(); 
+                statusMsg.innerHTML = "✅ Message saved to storage and sent!";
+                this.reset(); // Clears the form but stays on the page
             }
         });
-    } else {
-        console.error("Test Drive form or status message element missing from HTML!");
     }
 }
 
