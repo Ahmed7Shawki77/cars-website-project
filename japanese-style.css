@@ -125,25 +125,3 @@ body.light {
     background: #c0bcbc;
     color: black;
 }
-/*رمز القمر ال اليوزر هيدوس عليه عشان يغير الثيميز*/
-#toggleMode {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    padding: 10px;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-}
-/*  يخلي الكليك صوته أحسن */
-button, a, .clickable, img {
-    cursor: pointer;
-    transition: transform 0.2s ease;
-}
-
-button:active,
-a:active,
-.clickable:active,
-img:active {
-    transform: scale(0.97);
-}
