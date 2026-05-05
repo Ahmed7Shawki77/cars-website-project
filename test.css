@@ -6,10 +6,10 @@ body {
     background-attachment: fixed;
     background-color: transparent !important;
     position: relative;
-    transition: background-color 0.3s ease;
+    z-index: 0; /* Ensures body is the base for the overlay */
 }
 
-/* This layer sits between the image and your text to provide contrast */
+/* This is the dimming layer */
 body::before {
     content: '';
     position: fixed;
@@ -17,14 +17,15 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.2);
-    z-index: -1;
+    background: rgba(0, 0, 0, 0.2); /* Light mode overlay */
+    z-index: -1; /* Sits between image and text */
     transition: background 0.4s ease;
+    pointer-events: none; /* Ensures you can still click buttons through it */
 }
 
-/* DARK MODE OVERLAY: Dim the background image when theme is switched */
+/* This triggers when the button adds the class */
 body.dark-theme::before {
-    background: rgba(0, 0, 0, 0.75);
+    background: rgba(0, 0, 0, 0.75) !important;
 }
 
 .testdrive-section {
