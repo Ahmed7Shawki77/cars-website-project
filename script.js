@@ -114,23 +114,38 @@ function initContactForm() {
 
 function initTestDriveForm() {
     const tdForm = document.getElementById('testdriveForm');
-    if (tdForm) {
-        tdForm.addEventListener('submit', function(e) {
-            e.preventDefault(); // This is what keeps the message from disappearing
-            
-            const name = document.getElementById('tdName').value.trim();
-            const statusMsg = document.getElementById('tdStatusMessage');
+    const statusMsg = document.getElementById('tdStatusMessage');
 
-            // Same validation logic you used for Contact Us
-            if (name.length < 2) {
+    if (tdForm && statusMsg) {
+        tdForm.addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevents the refresh so we can see the message
+
+            // Grabbing values using the exact placeholders from your HTML
+            const name = this.querySelector('input[placeholder="Full Name"]').value.trim();
+            const phone = this.querySelector('input[placeholder="Phone Number"]').value.trim();
+            const email = this.querySelector('input[placeholder="Email Address"]').value.trim();
+            const car = this.querySelector('input[placeholder="Car Model"]').value.trim();
+            const genderSelected = this.querySelector('input[name="gender"]:checked');
+
+            // Validation Logic (Matching your Contact Us style)
+            if (!name || !phone || !email || !car || !genderSelected) {
                 statusMsg.style.color = "#ff4d4d";
-                statusMsg.innerHTML = "❌ Name too short.";
-            } else {
-                // Same success logic as Contact Us
-                localStorage.setItem('lastTestDriveName', name);
+                statusMsg.innerHTML = "❌ Please fill all fields before booking.";
+            } 
+            else if (name.length < 3) {
+                statusMsg.style.color = "#ff4d4d";
+                statusMsg.innerHTML = "❌ Name is too short.";
+            } 
+            // Success Logic
+            else {
                 statusMsg.style.color = "#4CAF50";
-                statusMsg.innerHTML = "✅ Message saved to storage and sent!";
-                this.reset(); // Clears the form but stays on the page
+                statusMsg.innerHTML = "✅ Test drive request sent successfully!";
+                
+                // Save to localStorage
+                localStorage.setItem('lastTestDriveUser', name);
+
+                // Clear the form fields
+                this.reset();
             }
         });
     }
