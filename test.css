@@ -1,3 +1,6 @@
+html, body, main, section {
+    background-color: transparent !important;
+}
 body {
   /* Force the image to stay and kill the solid color from header-footer.css */
   background-image: url('images/test.jpeg') !important;
