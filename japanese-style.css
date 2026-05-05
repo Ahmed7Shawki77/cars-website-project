@@ -11,7 +11,8 @@ body {
     margin: 40px 0;
     background:#681A15; 
     -webkit-background-clip: text;
-    color: transparent;
+     color: #444;
+     font-weight: bold;
     letter-spacing: 2px;
 }
 .japanese_cars{
@@ -34,6 +35,8 @@ body {
     align-items: center;
     gap: 12px;
     font-size: 28px;
+    font-weight: bold;
+    color: #444;
 }
 
 /* لوجو كل شركة انا ال حطاها جمب اسمها*/
@@ -56,7 +59,8 @@ body {
 
 /*الكابشن ال انا حطاه تحت كل شركة */
 .desc {
-    color: #361e1e;
+    color: #444;
+    font-weight: bold;
     margin-bottom: 20px;
 }
 
@@ -91,12 +95,14 @@ body {
 /* اسم العربية */
 .car h3 {
     margin: 10px 0;
-    color: #361e1e;
+     font-weight: bold;
+    color: #444;
 }
 
 /* الكابشن ال تحت كل عربية انا حطاها*/
 .car p {
-    color: #361e1e;
+    font-weight: bold;
+    color: #444;
     padding: 0 10px 15px;
 }
 /*التقييم ال حطاه تحت كل عربية*/
