@@ -65,8 +65,10 @@
         <div class="form-buttons">
           <button type="submit" id="bookBtn"> Book Now</button>
         </div>
+          <div id="tdStatusMessage" style="margin-top: 15px; font-weight: bold; text-align: center;"></div>
       </form>
     </div>
+      
 
     <div class="testdrive-info">
       <h3>Why You'll Love Driving With Us</h3>
@@ -87,20 +89,3 @@
   </footer>
 </body>
 </html>  
-
-
-<script>
-document.getElementById('testdriveForm').addEventListener('submit', function(e) {
-  const name = document.querySelector('input[placeholder="Full Name"]').value;
-  const phone = document.querySelector('input[placeholder="Phone Number"]').value;
-  const email = document.querySelector('input[placeholder="Email Address"]').value;
-  const car = document.querySelector('input[placeholder="Car Model"]').value;
-  const genderSelected = document.querySelector('input[name="gender"]:checked');
-
-  if (!name || !phone || !email || !car || !genderSelected) {
-    e.preventDefault();
-    alert('❌ Please fill all fields before booking.');
-  }
-});
-
-</script>
