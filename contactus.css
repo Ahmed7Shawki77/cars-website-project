@@ -1,8 +1,9 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #0b0b0b;
-    color: #080808;
+    /* Use variables so the theme toggle actually changes colors */
+    background-color: var(--body-bg, #0b0b0b); 
+    color: var(--text-color, #ffffff);
     margin: 0;
 }
 
@@ -16,6 +17,7 @@ body {
 .contact-wrapper {
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
     margin-top: 40px;
 }
 
@@ -34,7 +36,9 @@ body {
     border-radius: 5px;
 }
 
-button {
+
+/* NEW: Only targets the "Send Message" button inside the contact form */
+.contact-form button[type="submit"] {
     background-color: #e63946;
     color: white;
     padding: 12px 30px;
@@ -42,13 +46,14 @@ button {
     cursor: pointer;
     font-weight: bold;
     transition: 0.3s;
+    border-radius: 5px;
 }
 
-button:hover {
+.contact-form button[type="submit"]:hover {
     background-color: #c1121f;
 }
 
 .status-msg {
     margin-top: 20px;
-    color: #a8dadc;
+    font-weight: bold;
 }
