@@ -41,7 +41,6 @@ header h1 {
     gap: 30px;
     flex-wrap: wrap;
     justify-content: center;
-    background-color:yellow:
 }
 .cars-container p{
      font-weight: bold;
@@ -90,6 +89,26 @@ header h1 {
     width: 150px;
     height: auto;
     display: inline-block;
+}
+
+/* Dark Mode adjustments for Car Cards */
+body.dark-theme .car-card {
+    background: #2a2a2a; /* Dark gray background */
+    border: 1px solid #444; /* Darker border */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+body.dark-theme .car-card h3 {
+    color: #ffffff; /* Ensures the car name is visible */
+}
+
+body.dark-theme .car-card p {
+    color: #cccccc; /* Slightly dimmed text for the description */
+}
+
+body.dark-theme .company h2 {
+    color: #ffffff;
+    border-bottom: 2px solid #444;
 }
 
 /* الريسبونسيف للموبيلات*/
