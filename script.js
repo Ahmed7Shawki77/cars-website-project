@@ -114,12 +114,27 @@ function initContactForm() {
 
 function initTestDriveForm() {
     const tdForm = document.getElementById('testdriveForm');
+    const statusMsg = document.getElementById('tdStatusMessage'); // The message holder
+
     if (tdForm) {
         tdForm.addEventListener('submit', function(e) {
+            e.preventDefault(); // Stop the page from reloading
+            
             const nameInput = this.querySelector('input[placeholder="Full Name"]');
-            if (nameInput && nameInput.value.length < 2) {
-                e.preventDefault();
-                alert("❌ Please enter a valid name for the test drive.");
+            
+            // Validation Logic
+            if (nameInput && nameInput.value.trim().length < 2) {
+                statusMsg.style.color = "#ff4d4d"; // Red for error
+                statusMsg.innerHTML = "❌ Please enter a valid name.";
+            } else {
+                // Success Logic
+                statusMsg.style.color = "#4CAF50"; // Green for success
+                statusMsg.innerHTML = "✅ Test drive request sent successfully!";
+                
+                // Optional: Save name to localStorage like you did in Contact Form
+                localStorage.setItem('lastTestDriveName', nameInput.value);
+                
+                this.reset(); // Clear the form fields
             }
         });
     }
