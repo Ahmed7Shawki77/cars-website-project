@@ -26,11 +26,6 @@ footer{
     position: fixed;
     z-index: 1000;
 }
-@media screen and (max-width:768px){
-    *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 header{
     padding: 20px;
