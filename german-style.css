@@ -30,7 +30,9 @@
     align-items: center;
     gap: 15px;
     margin-bottom: 10px;
-               }
+    font-weight: bold;
+    color: #444;
+}
 
 .german-car-circle {
     width: 40px;
@@ -52,7 +54,8 @@
 
 .german-desc {
     font-size: 14px;
-    color: #666;
+    color: #444;
+    font-weight: bold;
     margin-left: 55px;
               }
 
@@ -89,18 +92,23 @@
 .german-content {
     padding: 20px;
     text-align: center;
+    font-weight: bold;
+     color: #444;
                 }
 
 .german-content h3 {
     font-size: 18px;
     margin-bottom: 8px;
-    color: #333;
+    color: #444;
+    font-weight: bold;
                     }
 
 .german-content p {
     font-size: 13px;
     color: #777;
     margin-bottom: 12px;
+     color: #444;
+    font-weight: bold;
                   }
 
 .german-stars {
