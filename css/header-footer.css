@@ -28,7 +28,7 @@ footer{
     position: fixed;
     z-index: 1000;
            }
-header{
+/* header{
     padding: 20px;
     background-color: #444;
     text-align: center;
@@ -49,7 +49,7 @@ footer{
     bottom: 0;
     position: fixed;
     z-index: 1000;
-           }
+           } */
 /* --- THEME VARIABLES (For Body Only) --- */
 :root {
     --body-bg: #f4f4f4;
