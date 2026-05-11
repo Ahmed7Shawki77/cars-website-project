@@ -25,7 +25,7 @@
     text-align: left;
               }
 
-.german-title h2{
+.german-title {
     display: flex;
     align-items: center;
     gap: 15px;
@@ -44,12 +44,6 @@
     justify-content: center;
     color: #fff;
     font-size: 18px;
-                    }
-
-.german-header h2 {
-    font-size: 28px;
-    color: #8b1a1a;
-    font-weight: bold;
                     }
 
 .german-desc {
