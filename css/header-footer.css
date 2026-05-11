@@ -57,8 +57,8 @@ footer{
       }
 
 body.dark-theme {
-    --body-bg: #000000;
-    --body-text: #f4f4f4;
+    --body-bg: #212529;
+    --body-text: #F8F9FA;
                 }
 
 /* --- GLOBAL RESET --- */
