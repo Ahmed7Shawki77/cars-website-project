@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+ }
+
 header{
     padding: 20px;
     background-color: #444;
@@ -10,7 +11,7 @@ header{
     color: #681A15;
     font-family: sans-serif;
     font-weight: 800;
-}
+      }
 footer{
     margin-top:50px;
     padding: 20px;
@@ -19,14 +20,14 @@ footer{
     color: #681A15;
     font-family: sans-serif;
     font-weight: 800;
-}
+       }
+
 .contact_us{
     width: 100%;
     bottom: 0;
     position: fixed;
     z-index: 1000;
-}
-}
+           }
 header{
     padding: 20px;
     background-color: #444;
@@ -34,7 +35,7 @@ header{
     color: #681A15;
     font-family: sans-serif;
     font-weight: 800;
-}
+     }
 footer{
     padding: 20px;
     background-color: #444;
@@ -42,40 +43,37 @@ footer{
     color: #681A15;
     font-family: sans-serif;
     font-weight: 800;
-}
+      }
 .contact_us{
     width: 100%;
     bottom: 0;
     position: fixed;
     z-index: 1000;
-}
-}
+           }
 /* --- THEME VARIABLES (For Body Only) --- */
 :root {
     --body-bg: #f4f4f4;
     --body-text: #333;
-}
+      }
 
 body.dark-theme {
-    --body-bg: #1a1a1a;
+    --body-bg: #000000;
     --body-text: #f4f4f4;
-}
+                }
 
 /* --- GLOBAL RESET --- */
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-}
+  }
 
 /* --- THE BODY (This part changes) --- */
 body, main, section, .container {
     background-color: var(--body-bg) !important;
     color: var(--body-text) !important;
     transition: background-color 0.3s ease;
-}
-
-
+                                }
 /* --- BUTTONS --- */
 .theme-toggle-btn {
     position: relative;
@@ -87,7 +85,7 @@ body, main, section, .container {
     color: white;
     font-weight: bold;
     margin: 10px;
-}
+                  }
 
 .logout-btn {
     background: #ff4d4d;
@@ -96,4 +94,4 @@ body, main, section, .container {
     padding: 5px 15px;
     border-radius: 4px;
     cursor: pointer;
-}
+            }
