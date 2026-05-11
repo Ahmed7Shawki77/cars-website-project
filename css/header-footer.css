@@ -28,28 +28,7 @@ footer{
     position: fixed;
     z-index: 1000;
            }
-/* header{
-    padding: 20px;
-    background-color: #444;
-    text-align: center;
-    color: #681A15;
-    font-family: sans-serif;
-    font-weight: 800;
-     }
-footer{
-    padding: 20px;
-    background-color: #444;
-    text-align: center;
-    color: #681A15;
-    font-family: sans-serif;
-    font-weight: 800;
-      }
-.contact_us{
-    width: 100%;
-    bottom: 0;
-    position: fixed;
-    z-index: 1000;
-           } */
+
 /* --- THEME VARIABLES (For Body Only) --- */
 :root {
     --body-bg: #f4f4f4;
