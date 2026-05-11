@@ -1,6 +1,4 @@
-/* ==========================================
-   1. THEME LOGIC
-   ========================================== */
+/*  1. THEME LOGIC */
 function initTheme() {
     if (localStorage.getItem('userTheme') === 'dark') document.body.classList.add('dark-theme');
 }
@@ -12,9 +10,7 @@ function toggleTheme() {
 
 initTheme();
 
-/* ==========================================
-   2. AUTH LOGIC (PROMPTS)
-   ========================================== */
+/* 2. AUTH LOGIC (PROMPTS) */
 function openForm(type) {
     let person = prompt(type === 'Sign Up' ? "Create Username:" : "Enter Username:");
     if (!person) return;
@@ -39,9 +35,7 @@ function logout() {
     location.reload();
 }
 
-/* ==========================================
-   3. FORM & UI HANDLING
-   ========================================== */
+/*  3. FORM & UI HANDLING */
 document.addEventListener('DOMContentLoaded', () => {
     // UI Update
     const user = localStorage.getItem('currentUser');
