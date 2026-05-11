@@ -26,7 +26,7 @@
               }
 
 .german-title h2{
-    display: flex;
+    display: flex !important;
     align-items: center;
     gap: 15px;
     margin-bottom: 10px;
