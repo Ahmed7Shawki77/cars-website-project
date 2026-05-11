@@ -32,6 +32,7 @@ footer{
 /* --- THEME VARIABLES (For Body Only) --- */
 :root {
     --body-bg: #f4f4f4;
+    --body-text: #333;
       }
 
 body.dark-theme {
