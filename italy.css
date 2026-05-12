@@ -7,7 +7,7 @@ body {
 .top{
     text-align: center;
     font-weight: bold;
-    /* color: #444; */
+    color: #444;
    }
 }
 html {
@@ -65,7 +65,7 @@ section {
 .car h3{
     text-align: center;
     font-weight: bold;
-    /* color: #444; */
+    color: #444;
 }
 .car:hover {
    background: linear-gradient(to right, #c0bcbc, #c0bcbc);
@@ -98,7 +98,7 @@ section {
     margin: 10px 0 15px;
     text-align: center;
     font-weight: bold;
-       /* color: #444; */
+       color: #444;
 }
 
 .btn {
