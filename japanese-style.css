@@ -11,7 +11,7 @@ body {
     margin: 40px 0;
     background:#681A15; 
     -webkit-background-clip: text;
-     color: #444;
+     /* color: #444; */
      font-weight: bold;
     letter-spacing: 2px;
 }
@@ -59,7 +59,7 @@ body {
 
 /*الكابشن ال انا حطاه تحت كل شركة */
 .desc {
-    color: #444;
+    /* color: #444; */
     font-weight: bold;
     margin-bottom: 20px;
 }
