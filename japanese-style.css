@@ -9,7 +9,7 @@ body {
     text-align: center;
     font-size: 45px;
     margin: 40px 0;
-    background:#681A15; 
+    /* background:#681A15;  */
     -webkit-background-clip: text;
      /* color: #444; */
      font-weight: bold;
@@ -36,7 +36,7 @@ body {
     gap: 12px;
     font-size: 28px;
     font-weight: bold;
-    /* color: #444 !important; */
+    color: #444 !important;
 }
 
 /* لوجو كل شركة انا ال حطاها جمب اسمها*/
@@ -102,7 +102,7 @@ body {
 /* الكابشن ال تحت كل عربية انا حطاها*/
 .car p {
     font-weight: bold;
-    color: #444;
+    /* color: #444; */
     padding: 0 10px 15px;
 }
 /*التقييم ال حطاه تحت كل عربية*/
