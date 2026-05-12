@@ -9,15 +9,10 @@ body {
     text-align: center;
     font-size: 45px;
     margin: 40px 0;
-    /* background:#681A15;  */
     -webkit-background-clip: text;
-     /* color: #444; */
      font-weight: bold;
     letter-spacing: 2px;
 }
-/* .japanese_cars{
-   background-color: #c0bcbc;
-} */
 /*دا هنا انا بتكلم على شغل كل براند انا اشتغلت عليها  */
 .brand {
     width: 85%;
@@ -59,7 +54,6 @@ body {
 
 /*الكابشن ال انا حطاه تحت كل شركة */
 .desc {
-    /* color: #444; */
     font-weight: bold;
     margin-bottom: 20px;
 }
