@@ -41,8 +41,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #000000;
-    font-size: 18px;
                     }
 
 .german-desc {
@@ -102,11 +100,6 @@
      color: #444;
     font-weight: bold;
                   }
-
-.german-stars {
-    color: #f1c40f;
-    font-size: 14px;
-               }
 
 .german-car {
     margin-bottom: 80px;
